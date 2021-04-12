@@ -4,12 +4,12 @@
 }
 
 .header-img {
-    display: block;
+    /* display: block;
     margin-left: auto;
-    margin-right: auto;
-    /* position: absolute;
+    margin-right: auto; */
+    position: absolute;
     right: 0%;
-    padding: 30px; */
+    padding: 30px;
 }
 
 .login1para {
@@ -34,6 +34,7 @@ span {
 
 .loginlogo {
     display: block;
+    padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -41,7 +42,7 @@ span {
 .logintext {
     text-align: center;
     color: white;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 input {
@@ -50,15 +51,64 @@ input {
     background: transparent;
     border-bottom: 2px solid #ffd549;
     padding-bottom: 10px;
-    width: 300px;
+    width: 445px;
 }
 
 .inputfield {
-    text-align: center;
+    margin-left: 435px;
+    padding: 10px;
 }
+
+
+/* .inputfield1 {
+    padding-left: -200px !important;
+} */
 
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+}
+
+.checkbo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    display: inline-block;
+    width: auto;
+    /* margin-left: -1px !important; */
+}
+
+.container input:checked~.checkmark {
+    background-color: #ffd549;
+}
+
+.button1 {
+    width: 200px;
+    height: 50px;
+    background-color: #ffd549;
+    border-radius: 15px;
+    margin-left: 570px !important;
+    border-style: none !important;
+}
+
+.forgot-user {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+    width: 200px;
+    color: white;
+}
+
+.inputfieldforgot {
+    margin-left: 570px !important;
+    padding-top: 10px;
 }
