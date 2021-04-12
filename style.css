@@ -1,3 +1,8 @@
+body {
+    background-color: #171717;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .container {
     height: 100vh;
     overflow: auto;
@@ -45,6 +50,16 @@ span {
     padding-top: 70px;
 }
 
+.text {
+    color: white;
+    padding-top: 50px;
+}
+
+.textcas {
+    color: white;
+    padding-top: 10px;
+}
+
 input {
     border: 0;
     outline: 0;
@@ -55,8 +70,13 @@ input {
 }
 
 .inputfield {
-    margin-left: 435px;
+    margin-left: 425px;
     padding: 10px;
+}
+
+.inputfieldcas {
+    margin-left: 425px;
+    padding: 0.1px;
 }
 
 
@@ -111,4 +131,12 @@ input[type="checkbox"] {
 .inputfieldforgot {
     margin-left: 570px !important;
     padding-top: 10px;
+}
+
+.letterspacing {
+    letter-spacing: 9px;
+}
+
+.headercas {
+    margin-left: 420px;
 }
