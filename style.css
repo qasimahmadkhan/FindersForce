@@ -1,0 +1,64 @@
+.container {
+    height: 100vh;
+    overflow: auto;
+}
+
+.header-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: absolute;
+    right: 0%;
+    padding: 30px; */
+}
+
+.login1para {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    /* -webkit-text-decoration-line: overline underline;
+    /* Safari */
+    /* text-decoration-line: overline underline;
+    text-decoration-color: #ffd549;
+    padding: 5px; */
+}
+
+span {
+    display: inline-block;
+    border-bottom: 1px solid #ffd549;
+    border-top: 1px solid #ffd549;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+
+.loginlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logintext {
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #ffd549;
+    padding-bottom: 10px;
+    width: 300px;
+}
+
+.inputfield {
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
