@@ -172,6 +172,7 @@ input[type="checkbox"] {
     padding-bottom: 10px;
     width: 200px;
     color: white;
+    letter-spacing: 1px;
 }
 
 .inputfieldforgot {
@@ -377,4 +378,47 @@ label {
     .forgot-userlpl {
         margin-left: -350px !important;
     }
+}
+
+
+/* media query for login */
+
+.button1log {
+    width: 200px;
+    height: 50px;
+    background-color: #ffd549;
+    border-radius: 15px;
+    margin-left: 570px !important;
+    border-style: none !important;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 763px) {
+    .lpl {
+        padding-left: 70px;
+    }
+    .lpl-btn-margin {
+        margin-left: 220px !important;
+    }
+    .button1log {
+        margin-left: 250px !important;
+    }
+    .inputuser {
+        margin-left: 100px !important;
+    }
+    .forgot-user {
+        margin-left: -315px !important;
+    }
+    .checkbolog {
+        padding-left: 100px;
+    }
+}
+
+.checkbolog {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
 }
