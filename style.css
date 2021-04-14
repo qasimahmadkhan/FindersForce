@@ -118,6 +118,16 @@
                 width: 445px;
             }
             
+            .inputuser1 {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid #ffd549;
+                padding-bottom: 10px;
+                margin-left: 65px;
+                width: 445px;
+            }
+            
             .inputusercas {
                 border: 0;
                 outline: 0;
@@ -205,7 +215,7 @@
                 font-family: 'Montserrat', sans-serif;
                 letter-spacing: 1px;
                 font-weight: bold;
-                /* margin-bottom: 30px !important; */
+                margin-bottom: 5px !important;
             }
             
             @media only screen and (max-width: 763px) {
@@ -302,6 +312,10 @@
             .textspace {
                 padding-left: 445px;
             }
+            
+            .textspace1 {
+                margin-left: 0px;
+            }
             /* get reminder */
             
             .grmargin {
@@ -322,7 +336,7 @@
                 outline: 0;
                 background: transparent;
                 border-bottom: 2px solid white;
-                padding-bottom: 10px;
+                padding-bottom: 5px;
                 width: 130px;
                 color: white;
                 margin-top: -20px;
@@ -335,6 +349,7 @@
             
             .buttongr {
                 margin-left: 580px !important;
+                margin-top: -20px;
             }
             
             .inputusergrr {
@@ -377,7 +392,7 @@
                     padding-bottom: 10px;
                     padding-top: 25px;
                     width: 300px !important;
-                    margin-top: -30px;
+                    margin-top: -25px;
                 }
                 .inputfield {
                     margin-left: 20px;
@@ -393,6 +408,7 @@
                 }
                 .buttongr {
                     margin-left: 180px !important;
+                    margin-top: -30px;
                 }
                 .inputfieldgr {
                     margin-left: 220px !important;
