@@ -1,6 +1,6 @@
             body {
                 /* background-color: #171717; */
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Poppins', sans-serif;
                 background-image: url("depots-slice/background.jpg");
                 height: 100%;
                 margin: 0;
@@ -50,7 +50,7 @@
             .logintext {
                 text-align: center;
                 color: white;
-                padding-top: 30px;
+                padding-top: 15px;
                 font-size: 3rem;
                 margin-bottom: -5px;
             }
@@ -124,8 +124,9 @@
                 background: transparent;
                 border-bottom: 2px solid #ffd549;
                 padding-bottom: 10px;
-                margin-left: 65px;
-                width: 445px;
+                margin-left: 110px;
+                width: 400px;
+                padding-top: 15px;
             }
             
             .inputusercas {
@@ -186,7 +187,7 @@
 } */
             
             .checkbo {
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Poppins', sans-serif;
                 font-size: 1rem;
                 color: white;
             }
@@ -243,9 +244,10 @@
                 background: transparent;
                 border-bottom: 2px solid white;
                 padding-bottom: 10px;
-                width: 200px;
+                width: 190px;
                 color: white;
                 letter-spacing: 1px;
+                margin-left: 20px;
             }
             
             .inputfieldforgot {
@@ -283,7 +285,7 @@
             
             input {
                 color: #ffd549 !important;
-                font-family: 'Montserrat', sans-serif !important;
+                font-family: 'Poppins', sans-serif !important;
                 font-size: 1rem !important;
             }
             /* input {
@@ -471,12 +473,13 @@
                 height: 50px;
                 background-color: #ffd549;
                 border-radius: 50px;
-                margin-left: 570px !important;
+                margin-left: 580px !important;
                 border-style: none !important;
                 font-size: 15px;
                 font-family: 'Montserrat', sans-serif;
                 letter-spacing: 1px;
                 font-weight: bold;
+                margin-top: -10px;
             }
             
             @media only screen and (max-width: 763px) {
@@ -501,7 +504,9 @@
             }
             
             .checkbolog {
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Poppins', sans-serif;
                 font-size: 1rem;
                 color: white;
+                margin-left: 110px;
+                margin-top: -10px;
             }
