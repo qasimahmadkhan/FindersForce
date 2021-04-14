@@ -2,11 +2,11 @@
                 /* background-color: #171717; */
                 font-family: 'Montserrat', sans-serif;
                 background-image: url("depots-slice/background.jpg");
+                height: 100%;
             }
             
             .container {
-                height: 100vh;
-                overflow: auto;
+                height: 100%;
             }
             
             .header-img {
@@ -48,12 +48,15 @@
             .logintext {
                 text-align: center;
                 color: white;
-                padding-top: 70px;
+                padding-top: 30px;
+                font-size: 3rem;
+                margin-bottom: -5px;
             }
             
             .text {
                 color: white;
                 padding-top: 50px;
+                font-size: 4rem;
             }
             
             .textcas {
@@ -97,7 +100,7 @@
             }
             
             .inputfield {
-                margin-left: 425px;
+                margin-left: 350px;
                 padding: 10px;
             }
             
@@ -158,13 +161,14 @@
                 width: 200px;
                 height: 50px;
                 background-color: #ffd549;
-                border-radius: 15px;
+                border-radius: 50px;
                 margin-left: 570px !important;
                 border-style: none !important;
                 font-size: 15px;
                 font-family: 'Montserrat', sans-serif;
                 letter-spacing: 1px;
                 font-weight: bold;
+                margin-bottom: 30px !important;
             }
             
             @media only screen and (max-width: 763px) {
@@ -199,7 +203,7 @@
             }
             
             .headercas {
-                margin-left: 420px;
+                margin-left: 380px;
             }
             
             .flex-container {
@@ -344,15 +348,16 @@
             
             .lpl {
                 font-family: 'Montserrat', sans-serif;
-                font-size: 1rem;
+                font-size: 1.4rem;
                 color: white;
-                letter-spacing: 1px;
+                letter-spacing: 2px;
+                font-weight: bold;
             }
             
             .lpl-btn {
                 width: 200px;
                 height: 50px;
-                border-radius: 15px;
+                border-radius: 50px;
                 margin-left: 570px !important;
                 background: none;
                 border: 1px solid #ffd549 !important;
@@ -379,6 +384,7 @@
             @media only screen and (max-width: 763px) {
                 .lpl {
                     padding-left: 70px;
+                    font-size: 1rem;
                 }
                 .lpl-btn-margin {
                     margin-left: 220px !important;
@@ -393,7 +399,7 @@
                 width: 200px;
                 height: 50px;
                 background-color: #ffd549;
-                border-radius: 15px;
+                border-radius: 50px;
                 margin-left: 570px !important;
                 border-style: none !important;
                 font-size: 15px;
