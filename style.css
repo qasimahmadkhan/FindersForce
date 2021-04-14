@@ -61,11 +61,25 @@
                 font-size: 3rem;
             }
             
+            .textfd {
+                color: white;
+                padding-top: 30px;
+                font-size: 3rem;
+                padding-left: 28px;
+            }
+            
             .textgr {
                 color: white;
                 padding-top: 30px;
                 font-size: 3rem;
                 margin-bottom: 10px;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .textfd {
+                    padding-left: 55px;
+                    font-size: 2rem;
+                }
             }
             
             @media only screen and (max-width: 763px) {
@@ -202,7 +216,15 @@
             }
             
             .button2 {
-                margin-left: 615px !important;
+                margin-left: 605px !important;
+                margin-top: -20px;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .button2 {
+                    margin-left: 190px !important;
+                    margin-top: 0px;
+                }
             }
             
             .forgot-user {
@@ -232,6 +254,13 @@
             .flex-container {
                 display: inline-flex;
                 flex-wrap: wrap;
+                margin-top: -10px;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .flex-container {
+                    margin-left: -218px;
+                }
             }
             
             .flex-child:first-child {
@@ -348,6 +377,7 @@
                     padding-bottom: 10px;
                     padding-top: 25px;
                     width: 300px !important;
+                    margin-top: -30px;
                 }
                 .inputfield {
                     margin-left: 20px;
