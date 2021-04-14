@@ -3,6 +3,8 @@
                 font-family: 'Montserrat', sans-serif;
                 background-image: url("depots-slice/background.jpg");
                 height: 100%;
+                margin: 0;
+                padding: 0;
             }
             
             .container {
@@ -55,8 +57,29 @@
             
             .text {
                 color: white;
-                padding-top: 50px;
-                font-size: 4rem;
+                padding-top: 30px;
+                font-size: 3rem;
+            }
+            
+            .textgr {
+                color: white;
+                padding-top: 30px;
+                font-size: 3rem;
+                margin-bottom: 10px;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .textgr {
+                    font-size: 2rem;
+                    padding-left: 55px;
+                }
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .text {
+                    font-size: 2rem;
+                    padding-left: 50px;
+                }
             }
             
             .textcas {
@@ -168,7 +191,7 @@
                 font-family: 'Montserrat', sans-serif;
                 letter-spacing: 1px;
                 font-weight: bold;
-                margin-bottom: 30px !important;
+                /* margin-bottom: 30px !important; */
             }
             
             @media only screen and (max-width: 763px) {
@@ -203,7 +226,7 @@
             }
             
             .headercas {
-                margin-left: 380px;
+                margin-left: 420px;
             }
             
             .flex-container {
@@ -248,7 +271,7 @@
 } */
             
             .textspace {
-                font-size: 50px !important;
+                padding-left: 445px;
             }
             /* get reminder */
             
@@ -261,7 +284,8 @@
                 font-family: 'Montserrat', sans-serif;
                 font-size: 1.5rem;
                 color: white;
-                padding-left: 80px;
+                padding-left: 150px;
+                margin-top: 10px;
             }
             
             .grpara2 {
@@ -272,6 +296,7 @@
                 padding-bottom: 10px;
                 width: 130px;
                 color: white;
+                margin-top: -20px;
             }
             
             .inputfieldgr {
