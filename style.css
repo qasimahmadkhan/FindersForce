@@ -12,6 +12,12 @@
             }
             
             .header-img {
+                float: right;
+                padding-right: 15px;
+                padding-top: 15px;
+            }
+            
+            .headetextfdr-img {
                 /* display: block;
     margin-left: auto;
     margin-right: auto; */
@@ -53,6 +59,7 @@
                 padding-top: 15px;
                 font-size: 3rem;
                 margin-bottom: -5px;
+                font-weight: lighter;
             }
             
             .text {
@@ -63,9 +70,10 @@
             
             .textfd {
                 color: white;
-                padding-top: 30px;
+                padding: 0px;
                 font-size: 3rem;
-                padding-left: 28px;
+                padding-left: 40px;
+                font-weight: 100;
             }
             
             .textgr {
@@ -77,8 +85,9 @@
             
             @media only screen and (max-width: 763px) {
                 .textfd {
-                    padding-left: 55px;
+                    padding-left: 125px;
                     font-size: 2rem;
+                    margin-bottom: -5px;
                 }
             }
             
@@ -144,6 +153,7 @@
                 background: transparent;
                 border-bottom: 2px solid #ffd549;
                 padding-bottom: 10px;
+                padding-top: 20px;
                 width: 300px !important;
             }
             
@@ -233,7 +243,7 @@
             
             @media only screen and (max-width: 763px) {
                 .button2 {
-                    margin-left: 190px !important;
+                    margin-left: 240px !important;
                     margin-top: 0px;
                 }
             }
@@ -265,12 +275,12 @@
             .flex-container {
                 display: inline-flex;
                 flex-wrap: wrap;
-                margin-top: -10px;
+                /* margin-top: 20px; */
             }
             
             @media only screen and (max-width: 763px) {
                 .flex-container {
-                    margin-left: -218px;
+                    margin-left: -180px;
                 }
             }
             
@@ -286,6 +296,7 @@
                 color: #ffd549 !important;
                 font-family: 'Poppins', sans-serif !important;
                 font-size: 1rem !important;
+                font-weight: bolder;
             }
             /* input {
     -webkit-writing-mode: none;
@@ -391,8 +402,8 @@
                     background: transparent;
                     border-bottom: 2px solid #ffd549;
                     padding-bottom: 10px;
-                    padding-top: 25px;
-                    width: 300px !important;
+                    padding-top: 55px;
+                    width: 335px !important;
                     margin-top: -25px;
                 }
                 .inputfield {
@@ -489,17 +500,17 @@
                     margin-left: 220px !important;
                 }
                 .button1log {
-                    margin-left: 250px !important;
+                    margin-left: 230px !important;
                 }
                 .inputuser {
                     margin-left: 100px !important;
                 }
                 .forgot-user {
-                    margin-left: -315px !important;
+                    margin-left: -330px !important;
                 }
-                .checkbolog {
+                /* .checkbolog {
                     padding-left: 100px;
-                }
+                } */
             }
             
             .checkbolog {
