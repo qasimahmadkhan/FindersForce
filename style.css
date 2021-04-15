@@ -222,6 +222,12 @@
                 /* margin-left: -1px !important; */
             }
             
+            .inputfield1 {
+                margin-left: 470px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            
             .container input:checked~.checkmark {
                 background-color: #ffd549;
             }
@@ -271,12 +277,13 @@
                 width: 190px;
                 color: white;
                 letter-spacing: 1px;
-                margin-left: 20px;
+                font-weight: bold;
             }
             
             .inputfieldforgot {
-                margin-left: 570px !important;
+                margin-left: 580px !important;
                 padding-top: 10px;
+                /* text-align: center; */
             }
             
             .letterspacing {
@@ -506,14 +513,19 @@
                 width: 200px;
                 height: 50px;
                 border-radius: 50px;
-                margin-left: 570px !important;
+                /* margin-left: 570px !important; */
                 background: none;
                 border: 2px solid #ffd549 !important;
                 color: white;
                 font-size: 15px;
                 font-family: 'Poppins', sans-serif;
                 font-weight: bolder;
-                margin-top: 6.34px;
+                margin: 8px;
+            }
+            
+            .buttnlog {
+                margin-top: 15px;
+                text-align: center;
             }
             
             @media only screen and (max-width: 763px) {
@@ -523,26 +535,29 @@
                 .lpl-btn-margin {
                     margin-left: 220px !important;
                 }
-                .button1log {
-                    margin-left: 230px !important;
-                }
                 .inputuser {
                     margin-left: 100px !important;
                 }
                 .forgot-user {
-                    margin-left: -330px !important;
+                    margin-left: -340px !important;
                 }
                 /* .checkbolog {
                     padding-left: 100px;
                 } */
             }
             
+            @media only screen and (max-width: 763px) {
+                .inputfield1 {
+                    margin-left: 135px;
+                }
+            }
+            
             .checkbolog {
                 font-family: 'Poppins', sans-serif;
                 font-size: 1rem;
                 color: white;
-                margin-left: 110px;
                 margin-top: -10px;
+                font-weight: bolder;
             }
             
             .logindash {
