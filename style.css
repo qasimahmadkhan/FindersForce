@@ -78,9 +78,11 @@
             
             .textgr {
                 color: white;
-                padding-top: 30px;
+                /* padding-top: 30px; */
                 font-size: 3rem;
                 margin-bottom: 10px;
+                font-weight: lighter;
+                margin-bottom: -10px;
             }
             
             @media only screen and (max-width: 763px) {
@@ -94,7 +96,7 @@
             @media only screen and (max-width: 763px) {
                 .textgr {
                     font-size: 2rem;
-                    padding-left: 55px;
+                    padding-left: 90px;
                 }
             }
             
@@ -336,11 +338,12 @@
             }
             
             .grpara {
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Poppins', sans-serif;
                 font-size: 1.5rem;
                 color: white;
                 padding-left: 150px;
-                margin-top: 10px;
+                margin-top: 1px;
+                font-weight: lighter;
             }
             
             .grpara2 {
@@ -351,7 +354,14 @@
                 padding-bottom: 5px;
                 width: 130px;
                 color: white;
-                margin-top: -20px;
+                margin-top: -40px;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .grpara2 {
+                    margin-top: -30px;
+                    margin-left: 30px;
+                }
             }
             
             .inputfieldgr {
@@ -415,11 +425,11 @@
                     padding-left: 50px;
                 }
                 .grpara {
-                    padding-left: 110px;
+                    padding-left: 145px;
                     font-size: 1.2rem;
                 }
                 .buttongr {
-                    margin-left: 180px !important;
+                    margin-left: 210px !important;
                     margin-top: -30px;
                 }
                 .inputfieldgr {
