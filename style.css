@@ -64,8 +64,11 @@
             
             .text {
                 color: white;
-                padding-top: 30px;
+                /* padding-top: 30px; */
                 font-size: 3rem;
+                font-weight: lighter;
+                padding-left: 25px;
+                margin-bottom: 10px;
             }
             
             .textfd {
@@ -103,7 +106,7 @@
             @media only screen and (max-width: 763px) {
                 .text {
                     font-size: 2rem;
-                    padding-left: 50px;
+                    padding-left: 105px;
                 }
             }
             
@@ -149,6 +152,12 @@
                 width: 445px;
             }
             
+            @media only screen and (max-width: 763px) {
+                .inputusercas {
+                    width: 335px;
+                }
+            }
+            
             .inputuserfd {
                 border: 0;
                 outline: 0;
@@ -165,13 +174,13 @@
             }
             
             .inputfieldcas {
-                margin-left: 425px;
+                margin-left: 445px;
                 padding: 0.1px;
             }
             
             @media only screen and (max-width: 763px) {
                 .inputfieldcas {
-                    margin-left: 100px;
+                    margin-left: 150px;
                     padding: 0.1px;
                 }
             }
@@ -229,6 +238,10 @@
                 letter-spacing: 1px;
                 font-weight: bold;
                 margin-bottom: 5px !important;
+            }
+            
+            .buttoncas {
+                margin-bottom: 25px !important;
             }
             
             @media only screen and (max-width: 763px) {
