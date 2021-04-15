@@ -274,10 +274,11 @@
                 outline: 0;
                 background: transparent;
                 border-bottom: 2px solid white;
-                width: 190px;
+                width: 210px;
                 color: white;
                 letter-spacing: 1px;
-                font-weight: bold;
+                font-weight: 600;
+                text-align: center;
             }
             
             .inputfieldforgot {
@@ -557,7 +558,7 @@
                 font-size: 1rem;
                 color: white;
                 margin-top: -10px;
-                font-weight: bolder;
+                font-weight: 650;
             }
             
             .logindash {
