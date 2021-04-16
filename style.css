@@ -608,27 +608,29 @@
             } */
             /* $BaseBG: #0f0f1a; */
             
+            .digit-group {
+                text-align: center;
+                margin: 50px;
+            }
+            
             .digit-group input {
                 width: 30px;
-                height: 00px;
-                /* background-color: lighten($BaseBG, 5%); */
-                border: none;
+                height: 50px;
+                background-color: transparent;
+                border-bottom: 2px white solid;
                 line-height: 50px;
                 text-align: center;
                 font-size: 24px;
-                font-family: 'Poppins', sans-serif;
                 font-weight: 200;
                 color: white;
                 margin: 0 2px;
             }
-            /* .splitter {
-                    padding: 0 5px;
-                    color: white;
-                    font-size: 24px;
-                } */
             
             .prompt {
                 margin-bottom: 20px;
                 font-size: 20px;
                 color: white;
             }
+            /* .mrep {
+                margin-right: 70px;
+            } */
