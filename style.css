@@ -185,15 +185,14 @@
                 margin-left: 330px;
                 padding: 0.1px;
             }
-            
-            .inputfieldep {
+            /* .inputfieldep {
                 border: none !important;
                 width: 10.5ch !important;
                 background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/100% 2px no-repeat !important;
                 color: rgb(182, 40, 40) !important;
                 font: 5ch consolas, monospace !important;
                 letter-spacing: .5ch !important;
-            }
+            } */
             /* .inputfield1 {
     padding-left: -200px !important;
 } */
@@ -607,3 +606,29 @@
                 margin-top: 30px;
                 text-align: center;
             } */
+            /* $BaseBG: #0f0f1a; */
+            
+            .digit-group input {
+                width: 30px;
+                height: 00px;
+                /* background-color: lighten($BaseBG, 5%); */
+                border: none;
+                line-height: 50px;
+                text-align: center;
+                font-size: 24px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 200;
+                color: white;
+                margin: 0 2px;
+            }
+            /* .splitter {
+                    padding: 0 5px;
+                    color: white;
+                    font-size: 24px;
+                } */
+            
+            .prompt {
+                margin-bottom: 20px;
+                font-size: 20px;
+                color: white;
+            }
