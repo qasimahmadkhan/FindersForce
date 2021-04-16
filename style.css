@@ -109,7 +109,7 @@
             
             .textcas {
                 color: white;
-                padding-top: 10px;
+                margin-top: 70px;
             }
             /* input {
     border: 0;
@@ -168,18 +168,16 @@
                 text-align: center;
                 padding: 10px;
             }
-            
-            .inputfieldcas {
+            /* .inputfieldcas {
                 margin-left: 445px;
                 padding: 0.1px;
-            }
-            
-            @media only screen and (max-width: 763px) {
-                .inputfieldcas {
-                    margin-left: 185px;
-                    padding: 0.1px;
-                }
-            }
+            } */
+            /* @media only screen and (max-width: 763px) {
+                    .inputfieldcas {
+                        margin-left: 185px;
+                        padding: 0.1px;
+                    }
+                } */
             /* .inputfieldfd {
                 margin-left: 330px;
                 padding: 0.1px;
@@ -283,22 +281,19 @@
             
             .inputfieldforgot {
                 text-align: center;
-                padding-top: 10px;
+                padding-top: 20px;
                 margin-bottom: 10px;
             }
             
             .inputfieldforgotfd {
-                margin-left: 600px !important;
                 padding-top: 10px;
-                /* text-align: center; */
+                text-align: center;
             }
-            
-            @media only screen and (max-width: 763px) {
+            /* @media only screen and (max-width: 763px) {
                 .inputfieldforgotfd {
                     margin-left: 260px !important;
-                    /* text-align: center; */
                 }
-            }
+            } */
             
             .letterspacing {
                 letter-spacing: 9px;
@@ -329,7 +324,7 @@
             input {
                 color: #f8ca12 !important;
                 font-family: 'Poppins', sans-serif !important;
-                font-size: 1rem !important;
+                font-size: 1.1rem !important;
                 font-weight: bolder;
             }
             /* input {
@@ -384,8 +379,9 @@
                 background: transparent;
                 border-bottom: 2px solid white;
                 padding-bottom: 5px;
-                width: 130px;
+                width: 200px;
                 color: white;
+                font-weight: bolder;
             }
             
             @media only screen and (max-width: 763px) {
@@ -435,7 +431,6 @@
             
             @media only screen and (max-width: 763px) {
                 .headercas {
-                    margin-left: 45px;
                     font-size: 1rem;
                 }
                 .grmargin {
@@ -507,14 +502,7 @@
             
             @media only screen and (max-width: 763px) {
                 .lpl {
-                    padding-left: 70px;
                     font-size: 1rem;
-                }
-                .lpl-btn-margin {
-                    margin-left: 220px !important;
-                }
-                .forgot-userlpl {
-                    margin-left: -350px !important;
                 }
             }
             /* media query for login */
@@ -539,21 +527,12 @@
             }
             
             @media only screen and (max-width: 763px) {
-                .lpl {
-                    padding-left: 70px;
-                }
-                .lpl-btn-margin {
-                    margin-left: 220px !important;
-                }
                 .inputuser {
                     margin-left: 100px !important;
                 }
                 .forgot-user {
                     margin-left: -340px !important;
                 }
-                /* .checkbolog {
-                    padding-left: 100px;
-                } */
             }
             
             .lpl-btn-margin {
@@ -667,4 +646,17 @@
                     flex-direction: column;
                     text-align: center;
                 }
+            }
+            
+            .flex-containe {
+                display: flex;
+                flex-wrap: nowrap;
+                background-color: DodgerBlue;
+                flex-direction: column;
+            }
+            
+            .flex-contain>div {
+                text-align: center;
+                /* line-height: 75px; */
+                font-size: 1.5rem;
             }
