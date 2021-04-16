@@ -34,14 +34,14 @@
                 /* -webkit-text-decoration-line: overline underline;
     /* Safari */
                 /* text-decoration-line: overline underline;
-    text-decoration-color: #ffd549;
+    text-decoration-color: #f8ca12;
     padding: 5px; */
             }
             
             span {
                 display: inline-block;
-                border-bottom: 1px solid #ffd549;
-                border-top: 1px solid #ffd549;
+                border-bottom: 1px solid #f8ca12;
+                border-top: 1px solid #f8ca12;
                 padding-bottom: 2px;
                 padding-top: 2px;
             }
@@ -67,7 +67,6 @@
                 /* padding-top: 30px; */
                 font-size: 3rem;
                 font-weight: lighter;
-                padding-left: 25px;
                 margin-bottom: 10px;
             }
             
@@ -91,7 +90,6 @@
             
             @media only screen and (max-width: 763px) {
                 .textfd {
-                    padding-left: 125px;
                     font-size: 2rem;
                     margin-bottom: -5px;
                 }
@@ -100,14 +98,12 @@
             @media only screen and (max-width: 763px) {
                 .textgr {
                     font-size: 2rem;
-                    padding-left: 90px;
                 }
             }
             
             @media only screen and (max-width: 763px) {
                 .text {
                     font-size: 2rem;
-                    padding-left: 105px;
                 }
             }
             
@@ -119,7 +115,7 @@
     border: 0;
     outline: 0;
     background: transparent;
-    border-bottom: 2px solid #ffd549;
+    border-bottom: 2px solid #f8ca12;
     padding-bottom: 10px;
     width: 445px;
 } */
@@ -128,7 +124,7 @@
                 border: 0;
                 outline: 0;
                 background: transparent;
-                border-bottom: 2px solid #ffd549;
+                border-bottom: 2px solid #f8ca12;
                 padding-bottom: 10px;
                 width: 445px;
             }
@@ -137,7 +133,7 @@
                 border: 0;
                 outline: 0;
                 background: transparent;
-                border-bottom: 2px solid #ffd549;
+                border-bottom: 2px solid #f8ca12;
                 padding-bottom: 10px;
                 width: 400px;
                 padding-top: 15px;
@@ -147,7 +143,7 @@
                 border: 0;
                 outline: 0;
                 background: transparent;
-                border-bottom: 2px solid #ffd549;
+                border-bottom: 2px solid #f8ca12;
                 padding-bottom: 10px;
                 width: 445px;
             }
@@ -162,7 +158,7 @@
                 border: 0;
                 outline: 0;
                 background: transparent;
-                border-bottom: 2px solid #ffd549;
+                border-bottom: 2px solid #f8ca12;
                 padding-bottom: 10px;
                 padding-top: 20px;
                 width: 350px !important;
@@ -180,7 +176,7 @@
             
             @media only screen and (max-width: 763px) {
                 .inputfieldcas {
-                    margin-left: 150px;
+                    margin-left: 185px;
                     padding: 0.1px;
                 }
             }
@@ -229,13 +225,13 @@
             }
             
             .container input:checked~.checkmark {
-                background-color: #ffd549;
+                background-color: #f8ca12;
             }
             
             .button1 {
                 width: 200px;
                 height: 50px;
-                background-color: #ffd549;
+                background-color: #f8ca12;
                 border-radius: 50px;
                 border-style: none !important;
                 font-size: 15px;
@@ -251,20 +247,12 @@
             
             @media only screen and (max-width: 763px) {
                 .button1 {
-                    margin-left: 220px !important;
                     padding-top: 10px;
                 }
             }
             
             .button2 {
                 font-weight: 1000 !important;
-            }
-            
-            @media only screen and (max-width: 763px) {
-                .button2 {
-                    margin-left: 240px !important;
-                    margin-top: 0px;
-                }
             }
             
             .fs {
@@ -307,6 +295,13 @@
                 /* text-align: center; */
             }
             
+            @media only screen and (max-width: 763px) {
+                .inputfieldforgotfd {
+                    margin-left: 260px !important;
+                    /* text-align: center; */
+                }
+            }
+            
             .letterspacing {
                 letter-spacing: 9px;
             }
@@ -323,7 +318,7 @@
             
             @media only screen and (max-width: 763px) {
                 .flex-container {
-                    margin-left: -180px;
+                    margin-left: -150px;
                 }
             }
             
@@ -336,7 +331,7 @@
             }
             
             input {
-                color: #ffd549 !important;
+                color: #f8ca12 !important;
                 font-family: 'Poppins', sans-serif !important;
                 font-size: 1rem !important;
                 font-weight: bolder;
@@ -365,7 +360,8 @@
 } */
             
             .textspace {
-                padding-left: 445px;
+                /* padding-left: 445px; */
+                text-align: center;
             }
             
             .textspace1 {
@@ -382,7 +378,6 @@
                 font-family: 'Poppins', sans-serif;
                 font-size: 1.5rem;
                 color: white;
-                padding-left: 150px;
                 margin-top: 1px;
                 font-weight: lighter;
             }
@@ -401,7 +396,7 @@
             @media only screen and (max-width: 763px) {
                 .grpara2 {
                     margin-top: -30px;
-                    margin-left: 30px;
+                    margin-left: 50px;
                 }
             }
             
@@ -411,7 +406,7 @@
             }
             
             .buttongr {
-                margin-left: 580px !important;
+                /* margin-left: 580px !important; */
                 margin-top: -20px;
             }
             
@@ -419,7 +414,7 @@
                 border: 0;
                 outline: 0;
                 background: transparent;
-                border-bottom: 2px solid #ffd549;
+                border-bottom: 2px solid #f8ca12;
                 padding-bottom: 10px;
                 /* padding-left: -15px; */
                 width: 300px !important;
@@ -429,7 +424,7 @@
                 border: 0;
                 outline: 0;
                 background: transparent;
-                border-bottom: 2px solid #ffd549;
+                border-bottom: 2px solid #f8ca12;
                 padding-bottom: 10px;
                 width: 300px !important;
             }
@@ -445,32 +440,28 @@
                 }
                 .grmargin {
                     margin-top: 00px;
-                    margin-left: -210px !important;
+                    margin-left: -180px !important;
                 }
                 .inputuserfd {
                     border: 0;
                     outline: 0;
                     background: transparent;
-                    border-bottom: 2px solid #ffd549;
+                    border-bottom: 2px solid #f8ca12;
                     padding-bottom: 10px;
                     padding-top: 55px;
                     width: 335px !important;
                     margin-top: -25px;
                 }
                 .inputfield {
-                    margin-left: 20px;
                     padding: 10px;
                 }
                 .textspace {
                     font-size: 40px !important;
-                    padding-left: 50px;
                 }
                 .grpara {
-                    padding-left: 145px;
                     font-size: 1.2rem;
                 }
                 .buttongr {
-                    margin-left: 210px !important;
                     margin-top: -30px;
                 }
                 .inputfieldgr {
@@ -492,9 +483,8 @@
                 width: 200px;
                 height: 50px;
                 border-radius: 50px;
-                margin-left: 570px !important;
                 background: none;
-                border: 1px solid #ffd549 !important;
+                border: 1px solid #f8ca12 !important;
                 color: white;
                 font-size: 15px;
                 font-family: 'Poppins', sans-serif;
@@ -512,7 +502,6 @@
                 color: white;
                 font-size: 0.9rem;
                 letter-spacing: 0.5px;
-                padding-left: 5px;
                 font-weight: bold;
             }
             
@@ -536,7 +525,7 @@
                 border-radius: 50px;
                 /* margin-left: 570px !important; */
                 background: none;
-                border: 2px solid #ffd549 !important;
+                border: 2px solid #f8ca12 !important;
                 color: white;
                 font-size: 15px;
                 font-family: 'Poppins', sans-serif;
@@ -565,6 +554,10 @@
                 /* .checkbolog {
                     padding-left: 100px;
                 } */
+            }
+            
+            .lpl-btn-margin {
+                text-align: center;
             }
             
             @media only screen and (max-width: 763px) {
@@ -605,3 +598,12 @@
                 text-align: center;
                 margin-top: 30px;
             }
+            
+            .btngrcenter {
+                text-align: center;
+                margin-top: 50px;
+            }
+            /* .btn-cas-center {
+                margin-top: 30px;
+                text-align: center;
+            } */
