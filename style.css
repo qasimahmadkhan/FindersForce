@@ -109,7 +109,7 @@
             
             .textcas {
                 color: white;
-                margin-top: 70px;
+                margin-bottom: 10px;
             }
             /* input {
     border: 0;
@@ -655,8 +655,51 @@
                 flex-direction: column;
             }
             
-            .flex-contain>div {
+            .flex-contain .inputfieldcas {
                 text-align: center;
                 /* line-height: 75px; */
                 font-size: 1.5rem;
+            }
+            
+            .absolute {
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 200px;
+                height: 100px;
+            }
+            
+            .relative {
+                position: relative;
+                width: 400px;
+                height: 200px;
+            }
+            
+            .casform {
+                width: 33%;
+                margin: auto;
+            }
+            
+            .casformlogin {
+                width: 31%;
+                margin: auto;
+            }
+            
+            .casform input {
+                width: 100%;
+            }
+            
+            .casformlogin input {
+                width: 5%;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .casform {
+                    width: 60%;
+                    margin: auto;
+                }
+                .casformlogin {
+                    width: 62%;
+                    margin: auto;
+                }
             }
