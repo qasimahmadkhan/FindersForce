@@ -1,0 +1,163 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: 'Poppins', sans-serif;
+ }
+ 
+ input {
+     color: white;
+ }
+ 
+ ::placeholder {
+     color: white;
+ }
+ 
+ .wrapper2 {
+     display: flex;
+     width: 100%;
+ }
+ 
+ .lists {
+     width: 55%;
+     padding: 1px;
+     background: white;
+     border-radius: 10px;
+     color: black;
+     font-weight: bold;
+     margin-top: 15px;
+     font-size: 10px;
+     margin-left: 5px;
+     height: 82px;
+ }
+ 
+ .lists:last-child {
+     width: 20%;
+     margin-right: 55px;
+ }
+ 
+ .lists:last-child p {
+     transform: rotate(-90deg);
+     margin-top: 40px;
+     text-align: center;
+     font-weight: bold;
+     color: black;
+ }
+ 
+ .lists button {
+     float: right;
+     border: none;
+     margin-top: 2px;
+     width: 40%;
+     height: 17px;
+     border-radius: 100px;
+     padding-bottom: 0px;
+ }
+ 
+ .review h4 {
+     border-left: 3px solid orange;
+     padding: 5px;
+ }
+ 
+ .input input {
+     border: none;
+     background: none;
+     border-bottom: 2px solid white;
+     outline: none;
+ }
+ 
+ .sidemenu {
+     width: 60px;
+     background: black;
+     height: 100%;
+     padding: 0px;
+     position: absolute;
+     right: 0;
+     top: 0;
+ }
+ 
+ .text {
+     border: 2px solid white;
+     border-radius: 10px;
+ }
+ 
+ .wrapper {
+     width: 100%;
+     display: flex;
+     background-image: url(../images/bg.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ 
+ .box {
+     overflow: hidden;
+     color: white;
+     flex-basis: 55%;
+     margin-left: auto;
+     color: white;
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+ 
+ .left {
+     flex-basis: 20%;
+     padding: 0px;
+ }
+ 
+ .right {
+     flex-basis: 26%;
+ }
+ 
+ .toggleicon {
+     cursor: pointer;
+     width: 50px;
+     height: 50px;
+     margin-top: 10px;
+ }
+ 
+ .menutext {
+     text-decoration: none;
+     color: white;
+     padding-left: 10px;
+     display: none;
+ }
+ 
+ .menuicon {
+     margin-top: 100px;
+     margin-left: 20px;
+     line-height: 60px;
+     text-align: center;
+ }
+ 
+ .rotate {
+     display: flex;
+     flex-direction: column;
+     background: aqua;
+     width: 40px;
+     height: 100%;
+     float: right;
+ }
+ 
+ .section {
+     width: 100%;
+     height: 100%;
+     color: white;
+     background: black;
+ }
+ 
+ .section:first-child {
+     background: black;
+ }
+ 
+ .section:last-child {
+     background: black;
+ }
+ 
+ .section p {
+     transform: rotate(-90deg);
+     margin-top: 100px;
+ }
