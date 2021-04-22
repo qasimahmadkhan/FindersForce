@@ -9,8 +9,14 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="page2.css">
+    <link rel="stylesheet" type="text/css" href="css/page2.css">
 
+    <link rel="stylesheet" href="css/calendar1.css">
+    <link rel="stylesheet" href="css/calendar2.css">
+    <link rel="stylesheet" href="css/calendar3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -24,57 +30,107 @@
 
 
 
-    <div class="wrapper">
+    <div class="row">
+
+        <div class="col-md-3 left">
+
+            <div class="row">
+
+                <div class="col-md-10">
+
+                    <main class="text-warning">
+                        <div class="calendar-wrapper text-warning"></div>
+                    </main>
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+                    <script src="calendar.min.js"></script>
+                    <script type="text/javascript">
+                        var config =
+                            `function selectDate(date) {
+  $('.calendar-wrapper').updateCalendarOptions({
+    date: date
+  });
+}
+
+var defaultConfig = {
+  weekDayLength: 1,
+  date: new Date(),
+  onClickDate: selectDate,
+  showYearDropdown: true,
+  startOnMonday: true,
+};
+
+$('.calendar-wrapper').calendar(defaultConfig);`;
+                        eval(config);
+                        const flask = new CodeFlask('#editor', {
+                            language: 'js',
+                            lineNumbers: true
+                        });
+                        flask.updateCode(config);
+                        flask.onUpdate((code) => {
+                            try {
+                                eval(code);
+                            } catch (e) {}
+                        });
+                    </script>
 
 
-        <div class="box left">
-
-
-            <div class="rotate">
-                <div class="section">
-                    <p> Review </p>
                 </div>
-                <div class="section">
-                    <p> Review </p>
+
+                <div class="col-md-2" style="height: 100vh;">
+
+                    <div class="rotate ">
+                        <div class="section">
+                            <p> Review </p>
+                        </div>
+                        <div class="section">
+                            <p> Review </p>
+                        </div>
+                        <div class="section">
+                            <p> Review </p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="section">
-                    <p> Review </p>
-                </div>
+
             </div>
+
+
+
 
         </div>
 
 
-        <div class="box main">
+        <div class="col-md-7 main">
             <div class="review">
-                <h4> REVIEW </h4>
+                <h4> Review </h4>
             </div>
 
 
-            <h3> JOB SPECIFICATION </h3>
+            <h3> JOB SPECIFICATION</h3>
 
-            <div class="row justify-content-between">
-                <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; JOB TYPE
+            <div class="row justify-content-between ">
+                <div class="col-md-5 ">
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Job Type
+                </div>
+                <div class="col-md-3 ">
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Start Date
                 </div>
                 <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; START DATE
-                </div>
-                <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; FINISH DATE
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Finish Date
                 </div>
             </div>
 
 
-            <div class="row justify-content-between">
-                <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+            <div class="row   justify-content-between">
+                <div class="col-md-5 input">
+                    <input type="text" class="w-100" placeholder="Straight 2 Site">
+                </div>
+                <div class="col-md-3  input">
+                    <input type="text" class="w-100" placeholder="Straight 2 Site">
                 </div>
                 <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
-                </div>
-                <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+                    <input type="text" class="w-100" placeholder="Straight 2 Site">
                 </div>
             </div>
 
@@ -82,38 +138,37 @@
 
 
             <div class="row  mt-lg-4 justify-content-between">
-                <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; JOB TYPE
+                <div class="col-md-5">
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Client Name
                 </div>
                 <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; START DATE
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Start Time
                 </div>
                 <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; FINISH DATE
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Finish Time
                 </div>
             </div>
 
 
             <div class="row justify-content-between">
-                <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+                <div class="col-md-5 input">
+                    <input type="text" placeholder="BT" class="w-100">
                 </div>
                 <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+                    <input type="text" placeholder="7:00">
                 </div>
                 <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+                    <input type="text" placeholder="17:00">
                 </div>
             </div>
 
 
 
             <div class="row  mt-lg-4 justify-content-between">
+                <div class="col-md-5">
+                    <input type="radio" class="custom-radio mt-1 "> &nbsp;&nbsp;Task Type </div>
                 <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; JOB TYPE
-                </div>
-                <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; START DATE
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Job Duration
                 </div>
                 <div class="col-md-3">
                 </div>
@@ -121,11 +176,11 @@
 
 
             <div class="row justify-content-between">
-                <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+                <div class="col-md-5 input">
+                    <input type="text" class="w-100" placeholder="2 Way">
                 </div>
                 <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+                    <input type="text" placeholder="10 Hours">
                 </div>
                 <div class="col-md-3 input">
                 </div>
@@ -138,79 +193,91 @@
             <h3 class="pt-5"> ADDRESS </h3>
 
             <div class="row justify-content-between">
-                <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; JOB TYPE
+                <div class="col-md-5">
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Number / Name
                 </div>
-                <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; START DATE
+                <div class="col-md-5 ">
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Street
                 </div>
-                <div class="col-md-3">
-                </div>
+                <div class="col-md-1"></div>
             </div>
 
 
-            <div class="row justify-content-between">
-                <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+            <div class="row justify-content-between ">
+                <div class="col-md-5  input">
+                    <input type="text" class="w-100" placeholder="B4UG">
                 </div>
-                <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+                <div class="col-md-7  input ">
+                    <input type="text" class=" " placeholder="553" style="width: 93%; float: right;">
                 </div>
-                <div class="col-md-3 input">
-                </div>
+
             </div>
 
 
 
 
             <div class="row  mt-lg-4 justify-content-between">
-                <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; JOB TYPE
+                <div class="col-md-5">
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Job Type
                 </div>
-                <div class="col-md-3">
-                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; START DATE
+                <div class="col-md-4">
+                    <input type="radio" class="custom-radio mt-1"> &nbsp;&nbsp; Start Date
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-2">
                 </div>
             </div>
 
 
             <div class="row justify-content-between">
-                <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+                <div class="col-md-5 input">
+                    <input type="text" class="w-100" placeholder="Straight 2 Site">
                 </div>
-                <div class="col-md-3 input">
-                    <input type="text" placeholder="Straight 2 Site">
+                <div class="col-md-7 input">
+                    <input type="text" placeholder="Straight 2 Site" style="width: 93%;float: right;">
                 </div>
-                <div class="col-md-3 input">
-                </div>
+
             </div>
 
 
             <input type="radio" class="mt-4"> &nbsp; Additional Location Information <br>
 
-            <div class="text mt-3 p-2 w-75">
+            <div class="text mt-3 p-2 w-100">
                 deo provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for
             </div>
 
 
             <h3 class="pt-5"> FINER DETAILS </h3>
 
-            <div class="d-flex">
-                <input type="radio" class="custom-radio mt-2 "> &nbsp;&nbsp; Where Should We Send This Job? <br>
+            <div class="row">
 
-                <input type="radio" class="custom-radio mt-2" style="margin-left: 200px;"> &nbsp;&nbsp; Where Should We Send This Job? <br>
+                <div class="col-md-6">
+                    <input type="radio"> &nbsp;&nbsp; Where Should We Send This Job?
+                </div>
+                <div class="col-md-6">
+                    <input type="radio"> &nbsp;&nbsp; Save Job Post For Future Bookings?
+                </div>
+                <br><br>
+                <div class="col-md-6">
+                    <input type="checkbox"> &nbsp;&nbsp;Send To Oil?
+                </div>
+                <div class="col-md-6">
+                    <input type="checkbox"> &nbsp;&nbsp; Let's Save Time
+                </div>
+                <br><br>
+
+                <div class="col-md-6 input">
+                    <input type="text" class="w-100" placeholder="023 3535 333">
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-outline-warning rounded-pill"> Edit Job Post <i class="fa fa-angle-right"></i> </button>
+                </div>
+
+
+
             </div>
 
-            <div class="d-flex mt-1">
-                <input type="checkbox" class="custom-checkbox mt-2"> &nbsp;&nbsp; Send To Oil
-                <input type="checkbox" class="custom-checkbox mt-2" style="margin-left: 358px;"> &nbsp;&nbsp; Let's See Your Love
-            </div>
 
-            <div class="d-flex input justify-content-between w-75 mt-2">
-                <input type="text" placeholder="091 845725">
-                <button type="button" class="btn btn-outline-warning mt-2" style="border-radius: 40px;">Edit Job Post</button>
-            </div>
+
             <!-- 
   FIRST PAGE SECTION ENDS -->
 
@@ -227,184 +294,269 @@
 
 
 
-        <div class="box right">
-            <div class="sidemenu">
-                <img src="images/FF icon.png" class="toggleicon" alt="">
+        <div class="col-md-3 right">
+            <div class="row bgimg">
+                <div class="col-md-10  " style="width: 88%;">
 
-                <div class="menuicon text-center">
-
-                    <div class="d-flex">
-                        <a href="#"> <img src="images/icon1.png"> </a>
-                        <p class="menutext"> HQ </p>
+                    <div class="wrapper2">
+                        <div class="lists p-2">
+                            <div class="d-flex " style="height: 15px;">
+                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p>BLGU 22</p>
+                            </div>
+                            06/12/2020
+                            <div class="d-flex " style="height: 15px;">
+                                <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
+                            </div>
+                            <div class="d-flex" style="height: 15px;">
+                                <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
+                                <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
+                            </div>
+                            <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
+                        </div>
+                        <div class="lists bg-warning text-white">
+                            <p> KAT <br> KNIGHT</p>
+                        </div>
                     </div>
 
-                    <div class="d-flex">
-                        <a href="#"> <img src="images/icon3.png"> </a>
-                        <p class="menutext"> JOBS </p>
+                    <div class="wrapper2">
+                        <div class="lists p-2">
+                            <div class="d-flex " style="height: 15px;">
+                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p>BLGU 22</p>
+                            </div>
+                            06/12/2020
+                            <div class="d-flex " style="height: 15px;">
+                                <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
+                            </div>
+                            <div class="d-flex" style="height: 15px;">
+                                <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
+                                <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
+                            </div>
+                            <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
+                        </div>
+                        <div class="lists bg-warning text-white">
+                            <p> KAT <br> KNIGHT</p>
+                        </div>
+                    </div>
+
+
+                    <div class="wrapper2">
+                        <div class="lists p-2">
+                            <div class="d-flex " style="height: 15px;">
+                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p>BLGU 22</p>
+                            </div>
+                            06/12/2020
+                            <div class="d-flex " style="height: 15px;">
+                                <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
+                            </div>
+                            <div class="d-flex" style="height: 15px;">
+                                <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
+                                <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
+                            </div>
+                            <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
+                        </div>
+                        <div class="lists bg-warning text-white">
+                            <p> KAT <br> KNIGHT</p>
+                        </div>
                     </div>
 
 
 
-                    <div class="d-flex">
-                        <a href="#"> <img src="images/icon2.png"> </a>
-                        <p class="menutext"> DEPOSTS </p>
+
+                    <div class="wrapper2">
+                        <div class="lists p-2">
+                            <div class="d-flex " style="height: 15px;">
+                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p>BLGU 22</p>
+                            </div>
+                            06/12/2020
+                            <div class="d-flex " style="height: 15px;">
+                                <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
+                            </div>
+                            <div class="d-flex" style="height: 15px;">
+                                <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
+                                <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
+                            </div>
+                            <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
+                        </div>
+                        <div class="lists bg-warning text-white">
+                            <p> KAT <br> KNIGHT</p>
+                        </div>
+                    </div>
+
+
+                    <div class="wrapper2">
+                        <div class="lists p-2">
+                            <div class="d-flex " style="height: 15px;">
+                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p>BLGU 22</p>
+                            </div>
+                            06/12/2020
+                            <div class="d-flex " style="height: 15px;">
+                                <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
+                            </div>
+                            <div class="d-flex" style="height: 15px;">
+                                <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
+                                <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
+                            </div>
+                            <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
+                        </div>
+                        <div class="lists bg-warning text-white">
+                            <p> KAT <br> KNIGHT</p>
+                        </div>
                     </div>
 
 
 
-                    <div class="d-flex">
-                        <a href="#"> <img src="images/icon4.png"> </a>
-                        <p class="menutext"> PLANNER </p>
+                    <div class="wrapper2">
+                        <div class="lists p-2">
+                            <div class="d-flex " style="height: 15px;">
+                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p>BLGU 22</p>
+                            </div>
+                            06/12/2020
+                            <div class="d-flex " style="height: 15px;">
+                                <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
+                            </div>
+                            <div class="d-flex" style="height: 15px;">
+                                <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
+                                <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
+                            </div>
+                            <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
+                        </div>
+                        <div class="lists bg-warning text-white">
+                            <p> KAT <br> KNIGHT</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="wrapper2">
+                        <div class="lists p-2">
+                            <div class="d-flex " style="height: 15px;">
+                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <p>BLGU 22</p>
+                            </div>
+                            06/12/2020
+                            <div class="d-flex " style="height: 15px;">
+                                <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
+                            </div>
+                            <div class="d-flex" style="height: 15px;">
+                                <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
+                                <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
+                            </div>
+                            <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
+                        </div>
+                        <div class="lists bg-warning text-white">
+                            <p> KAT <br> KNIGHT</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-md-2 bg-danger">
+
+                <div class="sidemenu">
+                    <img src="images/FF icon.png" class="toggleicon" alt="">
+
+                    <div class="menuicon text-center">
+
+                        <div class="d-flex">
+                            <a href="#"> <img src="images/icon1.png"> </a>
+                            <p class="menutext"> HQ </p>
+                        </div>
+
+                        <div class="d-flex">
+                            <a href="#"> <img src="images/icon3.png"> </a>
+                            <p class="menutext"> JOBS </p>
+                        </div>
+
+
+
+                        <div class="d-flex">
+                            <a href="#"> <img src="images/icon2.png"> </a>
+                            <p class="menutext"> DEPOSTS </p>
+                        </div>
+
+
+
+                        <div class="d-flex">
+                            <a href="#"> <img src="images/icon4.png"> </a>
+                            <p class="menutext"> PLANNER </p>
+                        </div>
+
+
+
+
                     </div>
 
 
 
 
                 </div>
-
-
-
 
             </div>
 
-            <h5 class="p-3"> JOB LIST</h5>
 
-            <div class="wrapper2">
-                <div class="lists ">
-                    <div class="d-flex " style="height: 15px;">
-                        <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <p>BLGU 22</p>
-                    </div>
-                    06/12/2020
-                    <div class="d-flex " style="height: 15px;">
-                        <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
-                        <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
-                    </div>
-                    <div class="d-flex" style="height: 15px;">
-                        <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
-                        <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
-                    </div>
-                    <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
-                </div>
-                <div class="lists bg-warning text-white">
-                    <p> KAT <br> KNIGHT</p>
-                </div>
-            </div>
+            <h5 class="p-3" style="border-left: 3px solid orange;"> JOB LIST</h5>
 
 
-            <div class="wrapper2">
-                <div class="lists ">
-                    <div class="d-flex " style="height: 15px;">
-                        <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <p>BLGU 22</p>
-                    </div>
-                    06/12/2020
-                    <div class="d-flex " style="height: 15px;">
-                        <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
-                        <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
-                    </div>
-                    <div class="d-flex" style="height: 15px;">
-                        <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
-                        <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
-                    </div>
-                    <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
-                </div>
-                <div class="lists bg-warning text-white">
-                    <p> KAT <br> KNIGHT</p>
-                </div>
-            </div>
 
 
-            <div class="wrapper2">
-                <div class="lists ">
-                    <div class="d-flex " style="height: 15px;">
-                        <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <p>BLGU 22</p>
-                    </div>
-                    06/12/2020
-                    <div class="d-flex " style="height: 15px;">
-                        <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
-                        <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
-                    </div>
-                    <div class="d-flex" style="height: 15px;">
-                        <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
-                        <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
-                    </div>
-                    <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
-                </div>
-                <div class="lists bg-warning text-white">
-                    <p> KAT <br> KNIGHT</p>
-                </div>
-            </div>
 
 
-            <div class="wrapper2">
-                <div class="lists ">
-                    <div class="d-flex " style="height: 15px;">
-                        <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <p>BLGU 22</p>
-                    </div>
-                    06/12/2020
-                    <div class="d-flex " style="height: 15px;">
-                        <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
-                        <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
-                    </div>
-                    <div class="d-flex" style="height: 15px;">
-                        <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
-                        <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
-                    </div>
-                    <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
-                </div>
-                <div class="lists bg-warning text-white">
-                    <p> KAT <br> KNIGHT</p>
-                </div>
-            </div>
 
 
-            <div class="wrapper2">
-                <div class="lists ">
-                    <div class="d-flex " style="height: 15px;">
-                        <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <p>BLGU 22</p>
-                    </div>
-                    06/12/2020
-                    <div class="d-flex " style="height: 15px;">
-                        <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
-                        <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
-                    </div>
-                    <div class="d-flex" style="height: 15px;">
-                        <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
-                        <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
-                    </div>
-                    <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
-                </div>
-                <div class="lists bg-warning text-white">
-                    <p> KAT <br> KNIGHT</p>
-                </div>
-            </div>
 
 
-            <div class="wrapper2">
-                <div class="lists ">
-                    <div class="d-flex " style="height: 15px;">
-                        <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <p>BLGU 22</p>
-                    </div>
-                    06/12/2020
-                    <div class="d-flex " style="height: 15px;">
-                        <p class=""> <i class="fa fa-stopwatch"></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
-                        <p> <i class="fa fa-map-marker-alt"></i> OXFORD</p>
-                    </div>
-                    <div class="d-flex" style="height: 15px;">
-                        <p class=""><i class="fa fa-calendar-times"></i> 2 WAY</p>&nbsp;&nbsp;
-                        <p class=""><i class="fa fa-map-marker-alt"></i> BLGU 22</p>
-                    </div>
-                    <button type="button" class="bg-warning"> $4545.3 SHIFT </button>
-                </div>
-                <div class="lists bg-warning text-white">
-                    <p> KAT <br> KNIGHT</p>
-                </div>
-            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+                $(document).ready(function() {
+                    $('.toggleicon').click(function() {
+                        $('.sidemenu').css("width", "150px");
+
+                    })
+                })
+            </script>
+
+
+
+
+
+
+
 
 
 
@@ -451,7 +603,6 @@
 
 
 
-    </div>
 
 
 
@@ -481,53 +632,11 @@
 
 
 
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
