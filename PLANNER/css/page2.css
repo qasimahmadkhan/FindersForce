@@ -151,7 +151,7 @@
  .rotate {
      display: flex;
      flex-direction: column;
-     background: aqua;
+     /* background: aqua; */
      width: 40px;
      height: 100%;
      float: right;
@@ -162,21 +162,24 @@
      width: 100%;
      height: 100%;
      color: white;
-     background: grey;
+     background: #575353;
+     ;
      border-bottom: 3px solid black;
+     border-radius: 5px;
  }
  
  .section:first-child {
-     background: black;
+     background: #171616;
  }
  
  .section:last-child {
-     background: grey;
+     background: #575353;
  }
  
  .section p {
      transform: rotate(-90deg);
      margin-top: 100px;
+     font-weight: bold;
  }
  
  .border-style {
