@@ -1,185 +1,192 @@
- 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
- *{ 
- 			margin: 0px;
- 			padding: 0px;
- 			box-sizing: border-box;
-  }
-body{
- 	font-family: poppins;
- 	overflow-x: hidden;
-  }
-input{
-	 color: white;
-	 font-size: 11px;
-}
-::placeholder{
-	 color: white;
-}  
-
-
- .wrapper2{
-  	 display: flex;
-  	 width: 100%;  
-  	 margin-top: 30px;
-         }
- .lists{
- 	 width: 100%;
-  	 background: white;
-  	 border-radius: 10px;
- 	 color: black;
-  	 font-weight: bold;
- 	 margin-top: 20px;
- 	 font-size: 10px;
- 	 margin: 2px;
-   }
-
- .lists:last-child{
-  	 width: 16%;
-  }
-  .lists:last-child p{
- 		transform: rotate(-90deg);
- 		margin-top:  25px;
- 		font-size: 14px;
- 		text-align: center;
- 		font-weight: bold;
-   }
-  .lists button{
-  	float: right;
-  	border: none;
-  	margin-top: 2px;
-    	width: 40%;
-    	height: 19px;
-   	border-radius: 100px;
-  }
-
-
-
- .review h4{ 
- 		border-left: 3px solid orange;
- 		padding: 5px;
-  }
-
-.input input{
-	 border: none;
-	 background: none;
-	 border-bottom: 2px solid white;
-	 outline: none;
-}
-.sidemenu{ 
-  		height: 100%;
-		padding: 0px;
-		position: absolute;
- 		right: 0;
- 		top: 0;
- 		text-align: center;
- 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
  }
-
-.text{
-	 border: 2px solid white;
-	 border-radius: 10px;
-
-}
-
-
-.main{ 
-	background: black;
-	color: white;
-	margin: 0 auto;
-	padding-left: 80px;
-	padding-right: 70px;
-	background-image: url(../images/bg.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-      }
-
-
-/* .wrapper{
+ 
+ body {
+     font-family: poppins;
+     overflow-x: hidden;
+ }
+ 
+ input {
+     color: white;
+     font-size: 11px;
+ }
+ 
+ ::placeholder {
+     color: white;
+ }
+ 
+ .wrapper2 {
+     display: flex;
+     width: 100%;
+     margin-top: 30px;
+ }
+ 
+ .lists {
+     width: 100%;
+     background: white;
+     border-radius: 15px 0 0 15px;
+     color: black;
+     font-weight: bold;
+     margin-top: 20px;
+     font-size: 10px;
+     margin: 2px;
+ }
+ 
+ .lists:last-child {
+     width: 16%;
+ }
+ 
+ .lists:last-child p {
+     transform: rotate(-90deg);
+     margin-top: 25px;
+     font-size: 14px;
+     text-align: center;
+     font-weight: bold;
+ }
+ 
+ .lists button {
+     float: right;
+     border: none;
+     margin-top: 2px;
+     width: 40%;
+     height: 19px;
+     border-radius: 100px;
+ }
+ 
+ .review h4 {
+     border-left: 3px solid orange;
+     padding: 5px;
+ }
+ 
+ .input input {
+     border: none;
+     background: none;
+     border-bottom: 2px solid white;
+     outline: none;
+ }
+ 
+ .sidemenu {
+     height: 100%;
+     padding: 0px;
+     position: absolute;
+     right: 0;
+     top: 0;
+     text-align: center;
+ }
+ 
+ .text {
+     border: 2px solid white;
+     border-radius: 10px;
+ }
+ 
+ .main {
+     background: black;
+     color: white;
+     margin: 0 auto;
+     padding-left: 80px;
+     padding-right: 70px;
+     background-image: url(../images/bg.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ /* .wrapper{
    	 display: flex;
   	   	 background-image: url(../images/bg.png);
   	 background-size: cover;
   	 background-repeat: no-repeat;
 
   }*/
-/*
+ /*
  .box{
   	 color: white;
  	 flex-grow:  8;
    	 color: white;
   	 padding-left: 10px;
        }*/
-
-
-
- .left{
-     	 	 padding: 0px;
-      	 	 position: relative;
-     	 	 position: fixed;
-     	 	 background: black;
-     	 	 background-image: url(../images/bg.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-
-
-
-
-   	 	 
-
-
-   	 	      }
- .right{
-   	  background: red;
-    	  height: 100%;     right: 0;	 	 position: fixed;
-     	  /*position: fixed;*/
-    	  /*right: 0;*/
-     	  background-image: url(../images/profile-img5.png);
  
+ .left {
+     padding: 0px;
+     position: relative;
+     position: fixed;
+     background: black;
+     background-image: url(../images/bg.png);
+     background-size: cover;
+     background-repeat: no-repeat;
  }
-
-
- .toggleicon{
- 	cursor: pointer;
- 	 width: 40px;
- 	 height: 40px;
- 	 margin-top: 10px;
+ 
+ .right {
+     background: red;
+     height: 100%;
+     right: 0;
+     position: fixed;
+     /*position: fixed;*/
+     /*right: 0;*/
+     background-image: url(../images/profile-img5.png);
  }
- .menutext{
-	 text-decoration: none;
-	 color: white;
-	 padding-left: 10px;
-	 display: none;
+ 
+ .toggleicon {
+     cursor: pointer;
+     width: 40px;
+     height: 40px;
+     margin-top: 10px;
  }
- .menuicon{
-	 margin-top: 100px;
- 	 line-height: 60px;
-	 text-align: center;
-}
-
-.rotate{
-	 display: flex;
-	 flex-direction: column;
-	 background: aqua;
-	 width: 40px;
-	 height: 100%;
-	 float: right;
-	 position: absolute;
-
-  }
-.section{
-	 width: 100%;
-	 height: 100%;
-	 color: white;
-	 background: grey;
-	 border-bottom: 3px solid black;
-}
-.section:first-child{
-	 background: black;
-}
-.section:last-child{
-	background: grey;
-}
-.section p{
-	transform: rotate(-90deg);
-	margin-top: 100px;
+ 
+ .menutext {
+     text-decoration: none;
+     color: white;
+     padding-left: 10px;
+     display: none;
  }
+ 
+ .menuicon {
+     margin-top: 100px;
+     line-height: 60px;
+     text-align: center;
+ }
+ 
+ .rotate {
+     display: flex;
+     flex-direction: column;
+     background: aqua;
+     width: 40px;
+     height: 100%;
+     float: right;
+     position: absolute;
+ }
+ 
+ .section {
+     width: 100%;
+     height: 100%;
+     color: white;
+     background: grey;
+     border-bottom: 3px solid black;
+ }
+ 
+ .section:first-child {
+     background: black;
+ }
+ 
+ .section:last-child {
+     background: grey;
+ }
+ 
+ .section p {
+     transform: rotate(-90deg);
+     margin-top: 100px;
+ }
+ 
+ .border-style {
+     border-radius: 0 15px 15px 0;
+     display: inline-block;
+     border: 5px solid warning;
+ }
+ /*  
+ .border-style-white {
+     border-radius: 0 0 10px 20px;
+     display: inline-block;
+     border: 5px solid warning;
+ } */
