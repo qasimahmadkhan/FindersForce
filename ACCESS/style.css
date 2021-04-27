@@ -1,0 +1,706 @@
+            body {
+                /* background-color: #171717; */
+                font-family: 'Poppins', sans-serif;
+                background-image: url("depots-slice/background.jpg");
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .container {
+                height: 100%;
+            }
+            
+            .header-img {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            
+            .headetextfdr-img {
+                /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+                position: absolute;
+                right: 0%;
+                padding: 30px;
+            }
+            
+            .login1para {
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                font-size: 1rem;
+                /* -webkit-text-decoration-line: overline underline;
+    /* Safari */
+                /* text-decoration-line: overline underline;
+    text-decoration-color: #f8ca12;
+    padding: 5px; */
+            }
+            
+            span {
+                display: inline-block;
+                border-bottom: 1px solid #f8ca12;
+                border-top: 1px solid #f8ca12;
+                padding-bottom: 2px;
+                padding-top: 2px;
+            }
+            
+            .loginlogo {
+                display: block;
+                padding-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .logintext {
+                text-align: center;
+                color: white;
+                padding-top: 15px;
+                font-size: 3rem;
+                margin-bottom: -5px;
+                font-weight: lighter;
+            }
+            
+            .text {
+                color: white;
+                /* padding-top: 30px; */
+                font-size: 3rem;
+                font-weight: lighter;
+                margin-bottom: 10px;
+            }
+            
+            .textfd {
+                color: white;
+                padding: 0px;
+                font-size: 3rem;
+                font-weight: 100;
+                padding-top: 15px;
+                margin-bottom: 11px;
+            }
+            
+            .textgr {
+                color: white;
+                /* padding-top: 30px; */
+                font-size: 3rem;
+                margin-bottom: 10px;
+                font-weight: lighter;
+                margin-bottom: -10px;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .textfd {
+                    font-size: 2rem;
+                    margin-bottom: -5px;
+                }
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .textgr {
+                    font-size: 2rem;
+                }
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .text {
+                    font-size: 2rem;
+                }
+            }
+            
+            .textcas {
+                color: white;
+                margin-bottom: 10px;
+                margin-top: 40px;
+            }
+            /* input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 2px solid #f8ca12;
+    padding-bottom: 10px;
+    width: 445px;
+} */
+            
+            .inputuser {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid #f8ca12;
+                padding-bottom: 10px;
+                width: 445px;
+            }
+            
+            .inputuser1 {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid #f8ca12;
+                padding-bottom: 10px;
+                width: 400px;
+                padding-top: 15px;
+            }
+            
+            .inputusercas {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid #f8ca12;
+                padding-bottom: 10px;
+                width: 445px;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .inputusercas {
+                    width: 335px;
+                }
+            }
+            
+            .inputuserfd {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid #f8ca12;
+                padding-bottom: 10px;
+                padding-top: 20px;
+                width: 350px !important;
+            }
+            
+            .inputfield {
+                text-align: center;
+                padding: 10px;
+            }
+            /* .inputfieldcas {
+                margin-left: 445px;
+                padding: 0.1px;
+            } */
+            /* @media only screen and (max-width: 763px) {
+                    .inputfieldcas {
+                        margin-left: 185px;
+                        padding: 0.1px;
+                    }
+                } */
+            /* .inputfieldfd {
+                margin-left: 330px;
+                padding: 0.1px;
+            } */
+            /* .inputfieldep {
+                border: none !important;
+                width: 10.5ch !important;
+                background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/100% 2px no-repeat !important;
+                color: rgb(182, 40, 40) !important;
+                font: 5ch consolas, monospace !important;
+                letter-spacing: .5ch !important;
+            } */
+            /* .inputfield1 {
+    padding-left: -200px !important;
+} */
+            /* ::-webkit-input-placeholder { */
+            /* Chrome/Opera/Safari */
+            /* font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+} */
+            
+            .checkbo {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+                color: white;
+            }
+            
+            input[type="checkbox"] {
+                -webkit-appearance: checkbox;
+                -moz-appearance: checkbox;
+                appearance: checkbox;
+                display: inline-block;
+                width: auto;
+                /* margin-left: -1px !important; */
+            }
+            
+            .inputfield1 {
+                margin-left: 475px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            
+            .container input:checked~.checkmark {
+                background-color: #f8ca12;
+            }
+            
+            .button1 {
+                width: 200px;
+                height: 50px;
+                background-color: #f8ca12;
+                border-radius: 50px;
+                border-style: none !important;
+                font-size: 15px;
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 1px;
+                font-weight: bolder;
+                margin-bottom: 5px !important;
+            }
+            
+            .buttoncas {
+                margin-bottom: 25px !important;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .button1 {
+                    padding-top: 10px;
+                }
+            }
+            
+            .button2 {
+                font-weight: 1000 !important;
+            }
+            
+            .fs {
+                margin-top: -30px;
+            }
+            
+            .forgot-user {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid white;
+                width: 210px;
+                color: white;
+                letter-spacing: 1px;
+                font-weight: 600;
+                text-align: center;
+            }
+            
+            .contact-support {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid white;
+                width: 160px;
+                color: white;
+                letter-spacing: 1px;
+                font-weight: 600;
+                text-align: center;
+            }
+            
+            .inputfieldforgot {
+                text-align: center;
+                padding-top: 20px;
+                margin-bottom: 10px;
+            }
+            
+            .inputfieldforgotfd {
+                padding-top: 10px;
+                text-align: center;
+            }
+            /* @media only screen and (max-width: 763px) {
+                .inputfieldforgotfd {
+                    margin-left: 260px !important;
+                }
+            } */
+            
+            .letterspacing {
+                letter-spacing: 9px;
+            }
+            
+            .headercas {
+                text-align: center;
+            }
+            
+            .flex-container {
+                display: inline-flex;
+                flex-wrap: wrap;
+                /* margin-top: 20px; */
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .flex-container {
+                    margin-left: -150px;
+                }
+            }
+            /* .flex-child:first-child {
+                margin-right: -250px;
+            } */
+            /* .yo {
+                margin-right: -250px;
+            } */
+            
+            input {
+                color: #f8ca12 !important;
+                font-family: 'Poppins', sans-serif !important;
+                font-size: 1.1rem !important;
+                font-weight: bolder;
+            }
+            /* input {
+    -webkit-writing-mode: none;
+    text-rendering: none;
+    color: none;
+    letter-spacing: none;
+    word-spacing: none;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: none;
+    text-align: none;
+    appearance: none;
+    background-color: none;
+    -webkit-rtl-ordering: none;
+    cursor: none;
+    margin: 0em;
+    font: none;
+    padding: none;
+    border-width: none;
+    border-style: none;
+    border-color: none;
+} */
+            
+            .textspace {
+                /* padding-left: 445px; */
+                text-align: center;
+            }
+            
+            .textspace1 {
+                margin-left: 0px;
+            }
+            /* get reminder */
+            
+            .grmargin {
+                /* text-align: center; */
+                margin-top: 10px;
+            }
+            
+            .grpara {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.5rem;
+                color: white;
+                margin-top: 1px;
+                font-weight: lighter;
+            }
+            
+            .grpara2 {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid white;
+                padding-bottom: 5px;
+                width: 200px;
+                color: white;
+                font-weight: bolder;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .text-center {
+                    margin-top: -30px;
+                }
+            }
+            
+            .inputfieldgr {
+                /* margin-left: 620px !important; */
+                text-align: center;
+            }
+            
+            .text-center {
+                text-align: center;
+                margin-top: -20px;
+                margin-bottom: 10px;
+            }
+            
+            .buttongr {
+                /* margin-left: 580px !important; */
+                margin-top: -20px;
+            }
+            
+            .inputusergrr {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid #f8ca12;
+                padding-bottom: 10px;
+                /* padding-left: -15px; */
+                width: 300px !important;
+            }
+            
+            .inputusergrl {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 2px solid #f8ca12;
+                padding-bottom: 10px;
+                width: 300px !important;
+            }
+            
+            label {
+                padding-left: -15px;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .headercas {
+                    font-size: 1rem;
+                }
+                .grmargin {
+                    margin-top: 00px;
+                    margin-left: -180px !important;
+                }
+                .inputuserfd {
+                    border: 0;
+                    outline: 0;
+                    background: transparent;
+                    border-bottom: 2px solid #f8ca12;
+                    padding-bottom: 10px;
+                    padding-top: 55px;
+                    width: 335px !important;
+                    margin-top: -25px;
+                }
+                .inputfield {
+                    padding: 10px;
+                }
+                .textspace {
+                    font-size: 40px !important;
+                }
+                .grpara {
+                    font-size: 1.2rem;
+                }
+                .buttongr {
+                    margin-top: -30px;
+                }
+                .inputfieldgr {
+                    margin-left: 220px !important;
+                    padding-top: 10px;
+                }
+            }
+            /* landing page login */
+            
+            .lpl {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.4rem;
+                color: white;
+                letter-spacing: 2px;
+                font-weight: bold;
+            }
+            
+            .lpl-btn {
+                width: 200px;
+                height: 50px;
+                border-radius: 50px;
+                background: none;
+                border: 1px solid #f8ca12 !important;
+                color: white;
+                font-size: 15px;
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 1px;
+                font-weight: bold;
+            }
+            
+            .forgot-userlpl {
+                border: 0;
+                outline: 0;
+                background: transparent;
+                /* border-bottom: 2px solid white; */
+                padding-bottom: 10px;
+                width: 210px;
+                color: white;
+                font-size: 0.9rem;
+                letter-spacing: 0.5px;
+                font-weight: bold;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .lpl {
+                    font-size: 1rem;
+                }
+            }
+            /* media query for login */
+            
+            .button1log {
+                width: 200px;
+                height: 50px;
+                border-radius: 50px;
+                /* margin-left: 570px !important; */
+                background: none;
+                border: 2px solid #f8ca12 !important;
+                color: white;
+                font-size: 15px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bolder;
+                margin: 8px;
+            }
+            
+            .buttnlog {
+                margin-top: 15px;
+                text-align: center;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .inputuser {
+                    margin-left: 100px !important;
+                }
+                .forgot-user {
+                    margin-left: -340px !important;
+                }
+            }
+            
+            .lpl-btn-margin {
+                text-align: center;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .inputfield1 {
+                    margin-left: 135px;
+                }
+            }
+            
+            .checkbolog {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+                color: white;
+                margin-top: -10px;
+                font-weight: 650;
+            }
+            
+            .checkbolog1 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 1rem;
+                color: white;
+                margin-top: 10px;
+                font-weight: 650;
+            }
+            
+            .logindash {
+                height: 160px;
+                width: 445px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .mglogo {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .clsbtn1 {
+                text-align: center;
+                margin-top: 30px;
+            }
+            
+            .btngrcenter {
+                text-align: center;
+                margin-top: 50px;
+            }
+            /* .btn-cas-center {
+                margin-top: 30px;
+                text-align: center;
+            } */
+            /* $BaseBG: #0f0f1a; */
+            
+            .digit-group {
+                text-align: center;
+                margin: 50px;
+            }
+            
+            .digit-group input {
+                width: 30px;
+                height: 50px;
+                background-color: transparent;
+                border-bottom: 2px white solid;
+                line-height: 50px;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 200;
+                color: white;
+                margin: 0 2px;
+            }
+            
+            .prompt {
+                margin-bottom: 20px;
+                font-size: 20px;
+                color: white;
+            }
+            /* .mrep {
+                margin-right: 70px;
+            } */
+            
+            .itemgr {
+                width: 50%
+            }
+            
+            .containergr {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                /* width: 100%; */
+            }
+            
+            .containergr input {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            
+            .form-wrapper {
+                max-width: 70%;
+                margin: auto;
+            }
+            
+            .child {
+                flex: 50%;
+                margin-bottom: 10px;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .containergr {
+                    flex-direction: column;
+                    text-align: center;
+                }
+            }
+            
+            .flex-containe {
+                display: flex;
+                flex-wrap: nowrap;
+                background-color: DodgerBlue;
+                flex-direction: column;
+            }
+            
+            .flex-contain .inputfieldcas {
+                text-align: center;
+                /* line-height: 75px; */
+                font-size: 1.5rem;
+            }
+            
+            .absolute {
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 200px;
+                height: 100px;
+            }
+            
+            .relative {
+                position: relative;
+                width: 400px;
+                height: 200px;
+            }
+            
+            .casform {
+                width: 33%;
+                margin: auto;
+            }
+            
+            .casformlogin {
+                width: 31%;
+                margin: auto;
+            }
+            
+            .casform input {
+                width: 100%;
+            }
+            
+            .casformlogin input {
+                width: 5%;
+            }
+            
+            @media only screen and (max-width: 763px) {
+                .casform {
+                    width: 60%;
+                    margin: auto;
+                }
+                .casformlogin {
+                    width: 62%;
+                    margin: auto;
+                }
+            }

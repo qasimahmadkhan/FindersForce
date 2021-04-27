@@ -9,14 +9,20 @@
      font-family: poppins;
      overflow-x: hidden;
  }
- 
+ button{
+       color: black;
+      font-family: sans-serif;
+      font-weight: 400;
+ }
+
  input {
      color: white;
      font-size: 11px;
  }
- 
+
  ::placeholder {
      color: white;
+     padding-left: 20px;
  }
  
  .wrapper2 {
@@ -34,7 +40,7 @@
      margin-top: 20px;
      font-size: 10px;
      margin: 2px;
- }
+  }
  
  .lists:last-child {
      width: 16%;
@@ -57,12 +63,12 @@
      border-radius: 100px;
  }
  
- .review h4 {
+ .review h3 {
      border-left: 3px solid orange;
      padding: 5px;
  }
  
- .input input {
+ .inputt input {
      border: none;
      background: none;
      border-bottom: 2px solid white;
@@ -163,7 +169,7 @@
      height: 100%;
      color: white;
      background: #575353;
-     ;
+    cursor: pointer;
      border-bottom: 3px solid black;
      border-radius: 5px;
  }
@@ -180,7 +186,7 @@
      transform: rotate(-90deg);
      margin-top: 100px;
      font-weight: bold;
- }
+  }
  
  .border-style {
      border-radius: 0 15px 15px 0;
@@ -197,3 +203,16 @@
  .adress-margin {
      margin-left: 25px;
  }
+
+ #calendr button{
+      background: orange;
+      color: white;
+      border: none;
+      padding: 5px;
+ }
+
+
+ .searchbar ::placeholder{
+     color: white;
+ }
+ 
