@@ -115,7 +115,7 @@
  
  .left {
      padding: 0px;
-     position: relative;
+     /* position: relative; */
      position: fixed;
      background: black;
      background-image: url(../images/bg.png);
@@ -128,6 +128,15 @@
      right: 0;
      position: fixed;
      background-image: url(../images/profile-img5.png);
+ }
+ 
+ @media only screen and (max-width: 763px) {
+     .right {
+         position: static;
+     }
+     .left {
+         position: static;
+     }
  }
  
  .toggleicon {
