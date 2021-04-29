@@ -91,10 +91,10 @@
  }
  
  .main {
-     background: black;
+     /* background: black; */
      color: white;
-     margin: 0 auto;
-     background-image: url(../images/bg.png);
+     /* margin-left: 0; */
+     /* background-image: url(../images/bg.png); */
      background-size: cover;
      background-repeat: no-repeat;
  }
@@ -116,9 +116,9 @@
  .left {
      padding: 0px;
      /* position: relative; */
-     position: fixed;
-     background: black;
-     background-image: url(../images/bg.png);
+     /* position: fixed; */
+     /* background: black;
+     background-image: url(../images/bg.png); */
      background-size: cover;
      background-repeat: no-repeat;
  }
@@ -165,8 +165,8 @@
      /* background: aqua; */
      width: 40px;
      height: 100%;
-     float: right;
-     position: absolute;
+     /* float: right;
+     position: absolute; */
  }
  
  .section {
@@ -218,4 +218,13 @@
  
  .searchbar ::placeholder {
      color: white;
+ }
+ 
+ .bakground {
+     background-image: url(../images/bg.png);
+ }
+ 
+ .calender-center {
+     width: 40%;
+     margin: 0 auto;
  }
