@@ -13195,3 +13195,17 @@
      border-bottom: 7px solid #FFF;
      transition: margin-left 0.25s ease-in-out;
  }
+ 
+ @media only screen and (max-width: 763px) {
+     .yellow #calendar,
+     .prev-.yellow #calendar {
+         width: 32.5em;
+     }
+ }
+ 
+ @media only screen and (max-width: 550px) {
+     .yellow #calendar,
+     .prev-.yellow #calendar {
+         width: 20em;
+     }
+ }
