@@ -301,7 +301,7 @@ input {
 
 input[type=date]:invalid::-webkit-datetime-edit {
     color: rgb(2, 2, 2);
-    font-size: 2rem;
+    /* font-size: 6rem; */
 }
 
 .create-note-input {
@@ -327,4 +327,12 @@ input[type=date]:invalid::-webkit-datetime-edit {
     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
     background-clip: padding-box;
+}
+
+.createNote-form input {
+    font-size: 1.2rem;
+}
+
+.cni-width {
+    width: 30px;
 }
