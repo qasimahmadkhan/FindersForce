@@ -299,6 +299,11 @@ input {
     filter: invert(1);
 }
 
+input[type=date]:invalid::-webkit-datetime-edit {
+    color: rgb(2, 2, 2);
+    font-size: 2rem;
+}
+
 .create-note-input {
     background: none;
     border: none;

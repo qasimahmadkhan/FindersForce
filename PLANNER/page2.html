@@ -28,29 +28,67 @@
     <script type="text/javascript">
         function incrementValue0() {
             var value = document.getElementById('number').value;
-            value = isNaN(value) ? 0 : value;
-            value++;
+            if (value < 9) {
+                value++;
+            }
             document.getElementById('number').value = value;
         }
 
         function incrementValue1() {
             var value = document.getElementById('number1').value;
-            value = isNaN(value) ? 0 : value;
-            value++;
+            if (value < 9) {
+                value++;
+            }
             document.getElementById('number1').value = value;
         }
 
         function incrementValue2() {
             var value = document.getElementById('number2').value;
-            value = isNaN(value) ? 0 : value;
-            value++;
+            if (value < 9) {
+                value++;
+            }
             document.getElementById('number2').value = value;
         }
 
         function incrementValue3() {
             var value = document.getElementById('number3').value;
-            value = isNaN(value) ? 0 : value;
-            value++;
+            if (value < 9) {
+                value++;
+            }
+            document.getElementById('number3').value = value;
+        }
+
+        function decrementValue0() {
+            var value = document.getElementById('number').value;
+            if (value >= 1) {
+                value--;
+            }
+
+            document.getElementById('number').value = value;
+        }
+
+        function decrementValue1() {
+            var value = document.getElementById('number1').value;
+            if (value >= 1) {
+                value--;
+            }
+
+            document.getElementById('number1').value = value;
+        }
+
+        function decrementValue2() {
+            var value = document.getElementById('number2').value;
+            if (value >= 1) {
+                value--;
+            }
+            document.getElementById('number2').value = value;
+        }
+
+        function decrementValue3() {
+            var value = document.getElementById('number3').value;
+            if (value >= 1) {
+                value--;
+            }
             document.getElementById('number3').value = value;
         }
     </script>
@@ -580,27 +618,31 @@
                             </div>
 
                             <div class="d-flex  w-100 justify-content-around input mt-3 create-note-input">
-                                <div>
-                                    <input type="date" id="myDate" value="2014-02-09" class="create-note-input">
+                                <div class="w-25">
+                                    <input type="date" style="border: none;background: none;" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
                                 </div>
 
-                                <div>
+                                <div style="text-align: center;">
                                     <input class="create-note-input" type="image" onclick="  incrementValue0()" src="images/plus-arrows.png">
                                     <input class="create-note-input" type="image" onclick="  incrementValue1()" src="images/plus-arrows.png">
                                     <input class="create-note-input" type="image" onclick="  incrementValue2()" src="images/plus-arrows.png">
                                     <input class="create-note-input" type="image" onclick="  incrementValue3()" src="images/plus-arrows.png">
 
-                                    <form>
+                                    <form style="margin-left: 10px;">
                                         <input type="text" class="create-note-input" id="number" value="0">
-                                        <input type="text" class="create-note-input" id="number1" value="8">
+                                        <input type="text" class="create-note-input" id="number1" value="8 :">
                                         <input type="text" class="create-note-input" id="number2" value="2">
                                         <input type="text" class="create-note-input" id="number3" value="3">
                                     </form>
+                                    <input class="create-note-input" type="image" onclick="  decrementValue0()" src="images/asset1@2x.png">
+                                    <input class="create-note-input" type="image" onclick="  decrementValue1()" src="images/asset1@2x.png">
+                                    <input class="create-note-input" type="image" onclick="  decrementValue2()" src="images/asset1@2x.png">
+                                    <input class="create-note-input" type="image" onclick="  decrementValue3()" src="images/asset1@2x.png">
 
                                 </div>
-
-                                <button type="button" class="dropdown-toggle  btn btn-outline-warning rounded-pill btn-sm mt-2"> Repeat Everyday </button>
-
+                                <div>
+                                    <button type="button" class="dropdown-toggle  btn btn-outline-warning rounded-pill btn-sm mt-2"> Repeat Everyday </button>
+                                </div>
                             </div>
 
 
