@@ -20,11 +20,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 
 
-
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.msin.css">
 
+
+    <script type="text/javascript">
+        function incrementValue0() {
+            var value = document.getElementById('number').value;
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function incrementValue1() {
+            var value = document.getElementById('number1').value;
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number1').value = value;
+        }
+
+        function incrementValue2() {
+            var value = document.getElementById('number2').value;
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number2').value = value;
+        }
+
+        function incrementValue3() {
+            var value = document.getElementById('number3').value;
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number3').value = value;
+        }
+    </script>
     <script type="text/javascript">
         $(document).ready(function() {
 
@@ -529,32 +558,48 @@
                             <div class="message w-75 mt-5">
                                 <textarea name="" placeholder="write something here" class="form-control bg-dark text-white w-100 " rows="8"></textarea>
 
-                                <p class="pt-2" style="text-align:right"> CREATED 9/12/2020 </p>
+                                <p class="pt-2 create-note-created"> created 9/12/2020 </p>
                             </div>
 
-                            <div class="row justify-content-around w-100 mt-5">
-                                <div class="col-md-3">
+                            <div class="row justify-content-around  mt-5">
+                                <div class="col-md-4 create-note-center">
                                     <img src="images/icon7.png" style="width: 20px;
                                  height: 20px;"> &nbsp;&nbsp; DATE
                                 </div>
 
-                                <div class="col-md-3">
+                                <div class="col-md-4 create-note-center">
                                     <img src="images/icon4.png" style="width: 20px;"> &nbsp;&nbsp; TIME
                                 </div>
 
 
-                                <div class="col-md-4">
+                                <div class="col-md-4 create-note-center">
                                     <img src="images/refresh.png" style="width: 20px;
                                  height: 20px;"> &nbsp;&nbsp; REPEAT
                                 </div>
 
                             </div>
 
-                            <div class="d-flex  w-100 justify-content-between input mt-5">
-                                <input type="text" placeholder="10/12/2020" style="width: 90px;margin-left:  10px; background: none;border: none;">
-                                <input type="text" placeholder="10/12/2020" style="width: 90px;margin-right:  0px;background: none;border: none;">
+                            <div class="d-flex  w-100 justify-content-around input mt-3 create-note-input">
+                                <div>
+                                    <input type="date" id="myDate" value="2014-02-09" class="create-note-input">
+                                </div>
 
-                                <button type="button" class="dropdown-toggle  btn btn-outline-warning rounded-pill btn-sm mt-2" style="margin-right: 70px;"> Repeat Everyday </button>
+                                <div>
+                                    <input class="create-note-input" type="image" onclick="  incrementValue0()" src="images/plus-arrows.png">
+                                    <input class="create-note-input" type="image" onclick="  incrementValue1()" src="images/plus-arrows.png">
+                                    <input class="create-note-input" type="image" onclick="  incrementValue2()" src="images/plus-arrows.png">
+                                    <input class="create-note-input" type="image" onclick="  incrementValue3()" src="images/plus-arrows.png">
+
+                                    <form>
+                                        <input type="text" class="create-note-input" id="number" value="0">
+                                        <input type="text" class="create-note-input" id="number1" value="8">
+                                        <input type="text" class="create-note-input" id="number2" value="2">
+                                        <input type="text" class="create-note-input" id="number3" value="3">
+                                    </form>
+
+                                </div>
+
+                                <button type="button" class="dropdown-toggle  btn btn-outline-warning rounded-pill btn-sm mt-2"> Repeat Everyday </button>
 
                             </div>
 
