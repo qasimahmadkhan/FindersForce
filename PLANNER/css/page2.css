@@ -336,3 +336,41 @@ input[type=date]:invalid::-webkit-datetime-edit {
 .cni-width {
     width: 30px;
 }
+
+@media only screen and (max-width: 763px) {
+    .cni-width {
+        width: 20px;
+    }
+}
+
+.cni-pd {
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 763px) {
+    .cni-pd {
+        padding-left: 5px;
+    }
+}
+
+.button-cn {
+    border: none;
+    background: transparent;
+    color: white;
+    border-radius: 45px;
+    box-shadow: 5px 5px 5px 5px rgba(247, 237, 237, 0.1);
+}
+
+.save-job-pos-s {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 763px) {
+    .save-job-pos-s {
+        width: 20px;
+        height: 20px;
+        margin-top: 8px;
+    }
+}
