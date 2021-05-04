@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="profile.css">
+
+    <!-- <link rel="stylesheet" href="PLANNER/css/calendar.css"> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.msin.css">
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.reviewclick3').hide();
+            $('.reviewclick2').hide();
+            $('.reviewclick1').show();
+
+
+
+            $('.reviewclick1-tail').click(function() {
+
+                $('.reviewclick1').show();
+                $('.reviewclick2').hide();
+                $('.reviewclick3').hide();
+            });
+            $('.reviewclick2-tail').click(function() {
+
+                $('.reviewclick2').show();
+                $('.reviewclick1').hide();
+                $('.reviewclick3').hide();
+
+            });
+            $('.reviewclick3-tail').click(function() {
+
+                $('.reviewclick3').show();
+                $('.reviewclick1').hide();
+                $('.reviewclick2').hide();
+
+
+            });
+
+        });
+    </script>
+
+    <title> Homepage </title>
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="row  bakground">
+
+            <div class="col-md-2 col-sm-12 left mx-1" style="overflow: hidden;">
+                <br>
+                <div class="">
+                    <h3 id="workprofile" class="px-2"> WORK PROFIILE </h3>
+                    <div class="user-card-wp">
+                        <img src="images/proimg.png" class="user-img">
+                        <p id="username" class="pad-wp-p"> Kai </p>
+
+                        <div class="d-flex text-warning justify-content-around text-center">
+                            <span> FULL NAME </span>
+                            <span> WORK RATING </span>
+                            <span> LOCATION </span>
+                        </div>
+                        <div class="d-flex text-white justify-content-between px-2">
+                            <span> kAI DAVIDSON </span>
+                            <span> ENTRY </span>
+                            <span> BIRMINGHAM </span>
+                        </div>
+                        <p class="pt-2 px-3" id="user-email">kavidson@gmail.com | +44 7700 90075</p>
+                        <p id="user-text" class="px-2">Lorem ipsum dolor sit amet, consectetuer <a href="#" class="text-warning px-3"> Read More </a> </p>
+                    </div>
+
+                    <h3 class="qualification"> QUALIFICATION</h3>
+
+                    <ul id="education">
+                        <li> Bachelor degree in multiple design. </li>
+                        <li> Bachelor degree in multiple design. </li>
+                        <li> Bachelor degree in multiple design. </li>
+                        <li> Bachelor degree in multiple design. </li>
+                        <li> Bachelor degree in multiple design. </li>
+                    </ul>
+
+                    <div class="d-flex text-warning justify-content-around text-center">
+                        <span> 305 </span>
+                        <span> 50 </span>
+                        <span> 20 </span>
+                    </div>
+                    <div class="d-flex text-white justify-content-between" style="font-size: 10px;">
+                        <span> JOB COMPLETED </span>
+                        <span> JOB PENDING </span>
+                        <span> JOB THIS WEEK </span>
+                    </div>
+                    <h5 class="pt-3 text-center mf-color"> MY FINANCE</h5>
+
+                    <p class="text-white">TOTAL FUNDS IN MY WALLET</p>
+                    <div class="bg-light pt-lg-0 rounded-pill">
+                        <p style="color: black; text-align: right;"> $5335.33 </p>
+                    </div>
+
+                    <p class="text-white">TOTAL FUNDS IN MY WALLET</p>
+                    <div class="bg-light pt-lg-0 rounded-pill">
+                        <p style="color: black; text-align: right;"> $5335.33 </p>
+                    </div>
+
+                    <p class="text-white">TOTAL FUNDS IN MY WALLET</p>
+                    <div class="bg-light pt-lg-0 rounded-pill">
+                        <p style="color: black; text-align: right;"> $5335.33 </p>
+                    </div>
+
+                    <h3 class="qualification text-center"> RUN FINDER FINANCE</h3>
+                    <h5 class="pt-3 text-white text-center"> MY TRAINING</h5>
+                    <hr style="color: orange;">
+                    <div class="d-flex text-warning justify-content-around text-center">
+                        <span> 50 </span>
+                        <span> 30 </span>
+                        <span> 10 </span>
+                    </div>
+                    <div class="d-flex text-white justify-content-around" style="font-size: 12px;">
+                        <span> COURSES <br> COMPLETED </span>
+                        <span> COURSES <br> PENDING </span>
+                        <span> COURSES <br> THIS WEEK </span>
+                    </div>
+
+                    <div class="d-flex text-warning  justify-content-between pt-3">
+                        <p>TOTAL TIME SPENT TRAINING <br> <span style="color: white;"> 50h 10 m </span></p>
+                        <p>LAST LOGIN <br> <span style="color: white;"> 23, Oct 14:00 </span></p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+            <div class="col-md-7 col-sm-12 main mt-20">
+                <div class="row">
+                    <div class="col-md-1 col-sm-1 col-1 review-column-padding">
+
+                        <div class="rotate ">
+
+                            <div class="section w-100  reviewclick3-tail">
+                                <p> REVIEW </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-11 col-sm-11 col-11">
+                        <div class="reviewclick1">
+                            <div id="div1" style="display:none;overflow: hidden;">
+                                <h3 class="pt-3"> FINANCIAL SPECIFICATION </h3>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="job4" class="custom-radio mt-1"> &nbsp; FINDER FORCE OOPS <br> &nbsp;&nbsp;REQUIRED FOR THIS JOB
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="job" class="custom-radio mt-1"> Job /Pay p/hour
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="jo2" class="custom-radio mt-1"> Job Duration
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 inputt">
+                                        <input type="text" class="w-25" placeholder="1">
+                                    </div>
+                                    <div class="col-md-4 inputt">
+                                        <input type="text" class="w-25" placeholder="$11.50">
+                                    </div>
+                                    <div class="col-md-4 inputt">
+                                        <input type="text" class="w-25" placeholder="10 hrs">
+                                    </div>
+                                </div>
+
+
+                                <div class="row mt-4">
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="job4" class="custom-radio mt-1"> Client Revenue
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="job" class="custom-radio mt-1"> Total Job Pay
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="jo2" class="custom-radio mt-1"> Gross Profit
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 inputt">
+                                        <input type="text" class="w-25" placeholder="$420">
+                                    </div>
+                                    <div class="col-md-4 inputt">
+                                        <button type="button" class="btn btn-dark w-50"> $35 </button>
+                                    </div>
+                                    <div class="col-md-4 inputt">
+                                        <button type="button" class="btn btn-dark w-50"> $35 </button>
+                                    </div>
+                                </div>
+
+
+                                <h3 class="pt-5"> OP SPECIFICATION </h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="radio" name="" value="job4" class="custom-radio mt-1"> Require Qualification
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="radio" name="" value="job" class="custom-radio mt-1"> Prefered Minimal Rating
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 inputt">
+                                        <input type="text" class="w-75" placeholder="SLG UNIT 2">
+                                    </div>
+                                    <div class="col-md-6 inputt">
+                                        <input type="text" class="w-75" placeholder="Anywhere">
+                                    </div>
+                                </div>
+
+
+                                <input type="radio" class="custom-radio mt-5"> Additional Location Information <br>
+
+
+                                <input type="checkbox" class="custom-checkbox mt-2"> &nbsp;&nbsp; yes this is checkbox yes this is checkbox yes this is checkbox
+
+                                <h3 class="pt-5"> ADDITIONAL INFORMATION </h3>
+                                <div class="row">
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+                                </div>
+                                <input type="radio" name="notify" class="custom-radio mt-5"> NOTIFY <br> &nbsp;&nbsp; yes this is checkbox yes this is checkbox yes this is checkbox
+                                <BR>
+                                <button type="button" class="btn btn-outline-warning mt-2" onclick="replace('div1','div2')" style="float: right; border-radius: 40px;">Edit Job Post</button>
+                            </div>
+
+
+
+
+                            <div id="div2" class="px-5" style="display:block;overflow: hidden;"><br>
+                                <div class="review d-flex">
+                                    <h3 class="px-3"> VITALS </h3>
+                                </div>
+
+                                <div class="row mt-2 text-warning justify-content-between ">
+                                    <div class="col-md-3">
+                                        <p>FULL NAME</p>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <p>PREFERED NAME</p>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <p>USERNAME</p>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-3   ">
+                                        <p> KAI DAVIDSON</p>
+                                    </div>
+                                    <div class="col-md-3   ">
+                                        <p>KAI</p>
+                                    </div>
+                                    <div class="col-md-3   ">
+                                        <p>@kavidson</p>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-2 text-warning justify-content-between ">
+                                    <div class="col-md-3 ">
+                                        <p>FULL NAME</p>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <p>PREFERED NAME</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>USERNAME</p>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-3   ">
+                                        <p> KAI DAVIDSON</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>KAI</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>@kavidson</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex mt-1 justify-content-between">
+                                    <h3 style="font-size: 20px;"> CONTACT </h3>
+                                    <h3 style="font-size: 20px;" class="mx-5 px-4"> KEY DOCS </h3>
+                                </div>
+
+                                <div class="row mt-lg-4 justify-content-between ">
+                                    <div class="col-md-6 ">
+                                        <p>ADDRESS</p>
+                                    </div>
+                                    <div class="col-md-4 mx-5 px-4 ">
+                                        <p style="float: right;">DRIVING LICENCE</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-6 text-warning">
+                                        <p>9 Ranalke Road, London, W4</p>
+                                    </div>
+                                    <div class="col-md-5 text-warning mx-4 px-5">
+                                        <p style="float: right;">DAVI5345A4</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="row mt-lg-0 justify-content-between ">
+                                    <div class="col-md-6 ">
+                                        <p>MOBILE</p>
+                                    </div>
+                                    <div class="col-md-4  mx-5 px-4">
+                                        <p style="float: right;">NI NUMBER</p>
+
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-4 text-warning">
+                                        <p>099025535 / 3563556W</p>
+                                    </div>
+                                    <div class="col-md-3 text-warning   mx-4 px-5">
+                                        <p>PAI45355</p>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-lg-0 justify-content-between ">
+                                    <div class="col-md-6 ">
+                                        <p>EMAIL ADDRESS</p>
+                                    </div>
+                                    <div class="col-md-4 mx-5 px-4">
+                                        <p style="float: right;">PASSPORT</p>
+
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-4 text-warning">
+                                        <p>kavidson@gmail.com</p>
+                                    </div>
+                                    <div class="col-md-3 px-1 text-warning mx-4 px-4">
+                                        <p>0336 4664664</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-lg-0 justify-content-between ">
+                                    <div class="col-md-6 ">
+                                        <p>NEXY OR KIN</p>
+                                    </div>
+                                    <div class="col-md-4 mx-5 px-4 ">
+                                        <p style="float: right;">FF CONTACT</p>
+
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-4  text-warning">
+                                        <p>SARAH DIVIDAN (MOTHER)</p>
+                                    </div>
+                                    <div class="col-md-3 px-1 text-warning ">
+                                        <p> DOWNLOAD FILE</p>
+                                    </div>
+                                </div>
+
+                                <h3 class="text-warning"> WORK </h3>
+                                <div class="row mt-2 text-warning justify-content-between ">
+                                    <div class="col-md-3 ">
+                                        <p>TIME IN INDUSTRY</p>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <p>TIME ON FF APP</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-3   ">
+                                        <p> 5 YEARS</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>2 YEARS </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                    </div>
+                                </div>
+
+                                <h5 class="text-warning"> WORK BIO </h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fug"></p>
+
+
+
+                                <h3 class="qualification"> QUALIFICATION</h3>
+
+                                <ul id="education">
+                                    <li> Bachelor degree in multiple design. </li>
+                                    <li> Bachelor degree in multiple design. </li>
+                                    <li> Bachelor degree in multiple design. </li>
+                                    <li> Bachelor degree in multiple design. </li>
+                                    <li> Bachelor degree in multiple design. </li>
+                                </ul>
+
+
+                                <div class="row mt-2 text-warning justify-content-between ">
+                                    <div class="col-md-3 ">
+                                        <p> JOB TYPE REFRENCE </p>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <p> LOCATION REFRENCE</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p> RADIUS PREFRENCE</p>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-3   ">
+                                        <p> 2-WAYS</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>OXFORD </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>15 MILES</p>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="row mt-2 text-warning justify-content-between ">
+                                    <div class="col-md-3 ">
+                                        <p> DEPORT PREFRENCE </p>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <p> CLIENT PREFRENCE</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p> WORK STATUS</p>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-3   ">
+                                        <p> SUBEIT</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>B.T </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>LIMITED COMPANY</p>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                                <div class="row mt-2 text-warning justify-content-between ">
+                                    <div class="col-md-6 ">
+                                        <p> ORDER OF PREFRENCE IMPORTANCE </p>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <p> CLIENT PREFRENCE</p>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-6   ">
+                                        <p> Location | Depot | Client | Radius | Job Type</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p>Car </p>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+                                <h5 class="text-warning"> FINANCES </h5>
+
+                                <div class="row mt-2 text-warning justify-content-between ">
+                                    <div class="col-md-4 ">
+                                        <p> ACCOUNT EMAIL ADDRESS </p>
+                                    </div>
+                                    <div class="col-md-2 ">
+                                        <p> TAX BRACKET</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p> TAX HMRC OUTGOINGS</p>
+                                    </div>
+                                </div>
+
+                                <div class="row justify-content-between ">
+                                    <div class="col-md-4   ">
+                                        <p> $332</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p>10% </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>finderfinance.com</p>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div id="tab1 " class="reviewclick2" style="height: 100vh;">
+                            <h3 class="mt-5" style="border-left: 3px solid orange; padding-left: 10px;"> CREATE A NOTE</h3>
+
+                            <div class="message w-75 mt-5">
+                                <textarea name="" placeholder="write something here" class="form-control bg-dark text-white w-100 " rows="8"></textarea>
+
+                                <p class="pt-2" style="text-align:right"> CREATED 9/12/2020 </p>
+                            </div>
+
+                            <div class="row justify-content-around w-100">
+                                <div class="col-md-3">
+                                    <img src="images/icon7.png" style="width: 20px;
+                                 height: 20px;"> &nbsp;&nbsp; DATE
+                                </div>
+
+                                <div class="col-md-3">
+                                    <img src="images/icon4.png" style="width: 20px;"> &nbsp;&nbsp; TIME
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <img src="images/refresh.png" style="width: 20px;
+                                 height: 20px;"> &nbsp;&nbsp; REPEAT
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex  w-100 justify-content-between input">
+                                <input type="text" placeholder="10/12/2020" style="width: 90px;margin-left:  10px;">
+                                <input type="text" placeholder="10/12/2020" style="width: 90px;margin-right:  0px;">
+
+                                <button type="button" class="dropdown-toggle  btn btn-outline-warning rounded-pill btn-sm mt-2" style="margin-right: 70px;"> Repeat Everyday </button>
+
+                            </div>
+
+
+                            <div class="box text-center mt-lg-5">
+                                <button type="button" class="btn btn-warning btn-lg rounded-pill w-25">Save</button>
+                                <p class="pt-3"> Contact Note </p>
+                            </div>
+
+                            <script type="text/javascript">
+                                $(window).scroll(function() {
+
+                                    var positiontop = $(document).scrollTop();
+
+                                    // console.log(positiontop);
+                                });
+                            </script>
+
+                        </div>
+                        <!---TABS DATA SECTIO ENDS HRERE-----?--?-->
+
+                        <div id="list" class="reviewclick3">
+
+                            <h3 style="border-left: 3px solid orange; padding-left: 10px;"> SAVE JOB POSTS </h3>
+
+                            <div class="row bg-dark mt-3 text-white " style="border-radius: 60px;">
+                                <div class="col-md-1">
+                                    <i class="fa fa-search text-white pt-2 text-center" style="font-size: 23px; padding-left: 20px;"></i>
+                                </div>
+                                <div class="col-md-10 searchbar">
+                                    <input type="text" class="form-control" placeholder="Find a Saved Job Posts" style="background: none; border: none; color: white;">
+                                </div>
+                                <div class="col-md-1"> <img src="images/icon5.png" style="width: 35px;height: 35px;"> </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white "> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-6 ">
+
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white "> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ">
+
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ">
+
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ">
+
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white  text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 ">
+
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " style="height: 15px; ">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ///MAIN DIV ENDS HERE -->
+            <div class="col-md-3 col-sm-12 right pt-3" style="overflow: hidden;">
+                <div class="row bgimg ">
+                    <div class="col-md-11 col-sm-6 col-6" style=" overflow: hidden;margin: 0 auto; ">
+
+
+                        <div class="col-md-11 mt-2">
+
+                            <h3 class="text-white px-2" style="border-left: 3px solid orange;"> SOCIAL PROFILES </h3>
+                            <div id="user-data">
+                                <div class="row">
+                                    <div class="col-md-3 usr-img">
+                                        <img src="images/proimg.png" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-9 user-card">
+                                        <span class="text-warning"> FULL NAME </span>
+                                        <p style="font-size: 12px;"> Kai Davidson <span style="float: right;"> 190 Posts </span> <br> <span class="text-warning"> Connects <span style="float: right;"> Jobs</span> </span> <br> <span class="text-white"> 253 <span style="float: right;">76</span>                                            </span> <br> <span class="text-warning"> Status </span> <br> The lorem text is diplay here edit its </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <p class="text-white text-center"> LIVE CHATS </p>
+                        <hr style="color: orange;">
+                        <div class="card4 mt-2 text-white">
+                            <p> TOTAL LIVE CHATS <span class="span"> 34</span> </p>
+                            <p> TOTAL UNREAD MESSAGES <span class="span"> 2</span> </p>
+
+                            <div class="d-flex bio">
+                                <img src="images/proimg.png">
+                                <p class="text-warning mx-2">Danny Ganglez <br> <span style="color: white;"> deo provides a powerful </span></p>
+                            </div>
+                            <div class="d-flex bio">
+                                <img src="images/proimg.png">
+                                <p class="text-warning mx-2">Danny Ganglez <br> <span style="color: white;"> deo provides a powerful </span></p>
+                            </div>
+                            <div class="d-flex bio">
+                                <img src="images/proimg.png">
+                                <p class="text-warning mx-2">Danny Ganglez <br> <span style="color: white;"> deo provides a powerful </span></p>
+                            </div>
+                            <div class="d-flex bio">
+                                <img src="images/proimg.png">
+                                <p class="text-warning mx-2">Danny Ganglez <br> <span style="color: white;"> deo provides a powerful </span></p>
+                            </div>
+                            <div class="d-flex bio">
+                                <img src="images/proimg.png">
+                                <p class="text-warning mx-2">Danny Ganglez <br> <span style="color: white;"> deo provides a powerful </span></p>
+                            </div>
+                        </div>
+                        <h3 class="mt-3 px-3 text-white" style="font-size: 15px; border-left: 3px solid orange;"> SUPPORT </h3>
+                        <div class="d-flex text-white justify-content-between text-center" style="font-size: 11px; padding: 12px;">
+                            <p>305 <br>JOBS COMPLETE</p>
+                            <p>305 <br>JOBS COMPLETE</p>
+                            <p>305 <br>JOBS COMPLETE</p>
+                        </div>
+                        <center> <button type="button" class="btn btn-outline-warning btn-sm"> Open Support </button> </center>
+
+
+
+
+                        <!----sIDEMENU SECTION ---->
+                        <div class="col-md-1 ">
+
+                            <div class="sidemenu ">
+                                <img src="images/FF icon.png " class="toggleicon " alt=" ">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function replace(hide, show) {
+                document.getElementById(hide).style.display = "none";
+                document.getElementById(show).style.display = "block";
+            }
+        </script>
+        <script src="script.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script>
+        <script src="./script.js"></script>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js " integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js " integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>
