@@ -137,6 +137,14 @@ input {
     background-repeat: no-repeat;*/
 }
 
+
+/* 
+@media only screen and (max-width: 763px) {
+    .left {
+        margin-left: 30px;
+    }
+} */
+
 .right {
     height: 100%;
     right: 0;
@@ -361,6 +369,8 @@ input {
 #workprofile {
     border-left: 3px solid orange;
     color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 
@@ -432,6 +442,14 @@ input {
     padding-top: 13px;
 }
 
+@media only screen and (max-width: 763px) {
+    .dash {
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
 .usr-img {
     position: relative;
 }
@@ -464,9 +482,39 @@ input {
     padding-top: 50px;
     text-align: center;
     font-size: 1rem;
+    font-weight: bold;
+}
+
+.fn-fw {
+    font-weight: bold;
 }
 
 .mf-color {
     color: orange;
     border-bottom: 2px solid orange;
+}
+
+.q-fs {
+    font-size: 0.7rem;
+}
+
+.mt-fs {
+    font-size: 0.6rem;
+}
+
+@media only screen and (max-width: 763px) {
+    .sm-center {
+        width: 70%;
+        margin: auto;
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 763px) {
+    .wp-resp {
+        width: 70%;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
 }
