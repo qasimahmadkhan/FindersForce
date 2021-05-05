@@ -1,0 +1,28 @@
+*{
+	 padding: 0px;
+	 margin: 0px;
+	 box-sizing: border-box;
+}
+ 
+.job h3{
+	 border-left: 3px solid blue;
+	 color: white;
+}
+.job img{
+	 width: 30px;
+	 height: 30px;
+}
+ 
+ 
+
+.leftside{
+	  	border-bottom: 2px solid white;
+}
+.rightside{
+	  	border-bottom: 2px solid white;
+
+}
+.mainside{
+	 	border-bottom: 2px solid white;
+
+}
