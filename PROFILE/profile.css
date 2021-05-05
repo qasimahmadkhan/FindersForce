@@ -185,7 +185,13 @@ input {
     display: flex;
     flex-direction: column;
     width: 40px;
-    height: 1260px;
+    height: 1672px;
+}
+
+@media only screen and (max-width: 700px) {
+    .rotate {
+        height: 1485px;
+    }
 }
 
 .section {
@@ -380,6 +386,7 @@ input {
     background: #656b676e;
     color: white;
     padding: 3px;
+    padding-left: 50px;
     font-size: 10px;
     position: relative;
     border-radius: 20px;
@@ -509,7 +516,7 @@ input {
     .wp-resp {
         width: 70%;
         margin: auto;
-        margin-top: 70px;
+        margin-top: 10px;
         margin-bottom: 20px;
     }
 }
@@ -543,6 +550,50 @@ input {
     letter-spacing: 5px;
 }
 
+@media only screen and (max-width: 763px) {
+    .vt-font {
+        font-weight: bolder;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .vital-fw1-sm {
+        font-size: 0.7rem;
+    }
+    .vital-fw1 {
+        font-size: 0.7rem;
+    }
+    .vital-fw {
+        font-size: 0.7rem;
+    }
+    .vital-fw-sm {
+        font-size: 0.7rem;
+    }
+}
+
 .vt-pd {
     padding-top: 50px;
+}
+
+.wp-cent {
+    width: 30%;
+    margin: auto;
+}
+
+.maindiv-padding {
+    padding-left: 30px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 763px) {
+    .maindiv-padding {
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow: hidden;
+    }
+}
+
+.sp-btn-pading {
+    margin-top: -35px;
 }
