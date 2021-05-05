@@ -473,11 +473,6 @@ input {
     height: 50px;
 }
 
-#div2 {
-    font-size: 13px;
-    text-transform: lowercase;
-}
-
 .pad-wp-p {
     padding-top: 50px;
     text-align: center;
@@ -517,4 +512,37 @@ input {
         margin-top: 70px;
         margin-bottom: 20px;
     }
+}
+
+.vital-fw {
+    font-weight: bolder;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.vital-fw-sm {
+    font-weight: bolder;
+    font-size: 0.8rem;
+}
+
+.vital-fw1 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.vital-fw1-sm {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.vt-font {
+    font-weight: bolder;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.vt-pd {
+    padding-top: 50px;
 }
