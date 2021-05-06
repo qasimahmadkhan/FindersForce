@@ -170,10 +170,37 @@ background-image: url(../images/bg.png); */
 .rotate {
     display: flex;
     flex-direction: column;
-    /* background: aqua; */
-    height: 1400px;
-    /* float: right;
-position: absolute; */
+    height: 1595px;
+}
+
+.rotate1 {
+    display: flex;
+    flex-direction: column;
+    height: 920px;
+}
+
+.rotate2 {
+    display: flex;
+    flex-direction: column;
+    height: 905px;
+}
+
+@media only screen and (max-width: 700px) {
+    .rotate {
+        height: 1755px;
+    }
+    .rotate1 {
+        height: 1020px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .rotate {
+        height: 1890px;
+    }
+    .rotate1 {
+        height: 1080px;
+    }
 }
 
 .section {
