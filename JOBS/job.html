@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="rangeslider.css">
+    <link rel="stylesheet" type="text/css" href="job.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.msin.css">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.reviewclick3').hide();
+            $('.reviewclick2').hide();
+            $('.reviewclick1').show();
+            $('.reviewclick1-tail').click(function() {
+                $('.reviewclick1').show();
+                $('.reviewclick2').hide();
+                $('.reviewclick3').hide();
+            });
+            $('.reviewclick2-tail').click(function() {
+                $('.reviewclick2').show();
+                $('.reviewclick1').hide();
+                $('.reviewclick3').hide();
+            });
+            $('.reviewclick3-tail').click(function() {
+                $('.reviewclick3').show();
+                $('.reviewclick1').hide();
+                $('.reviewclick2').hide();
+            });
+        });
+    </script>
+    <title> Homepage </title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-danger bakground">
+            <div class="col-md-2 mx-1 px-1 col-sm-12 left leftbox " style="overflow: hidden;">
+                <br>
+                <div class="">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="workprofile mx-2 px-2"> KEEP CALM AND <br>NARROW IT DOWN </h3>
+                        <img src="images/icon5.png" class="icon">
+                    </div>
+                    <div class="inputbox " id="input">
+                        <input type="text" class="w-100" placeholder="Filter By Location...">
+                        <input type="text" class="w-100 mt-4" placeholder="Filter By Depot...">
+                        <input type="text" class="w-100 mt-4" placeholder="Filter By Client...">
+                    </div>
+
+                    <h5 class="text-warning text-center pt-4"> Filter by Distance</h5>
+                    <!-- <img src="images/slider.png" class="img-fluid"> -->
+
+                    <!-- partial:index.partial.html -->
+                    <div class="range">
+                        <input type="range">
+                    </div>
+
+                    <ul class="range-labels">
+                        <li class="text-white">2</li>
+                        <li class="text-white">3</li>
+                        <li class="text-white">4</li>
+
+                    </ul>
+                    <!-- partial -->
+
+                    <p class="px-4 pt-4 text-white"> DATE <span id="rate"> RATE </span> </p>
+
+                    <div class="d-flex justify-content-between">
+                        <select name="pick" class="select">
+         <option value="Pick"> Pick </option>
+             </select>
+                        <div>
+                            <button type="button" class="plus"> <i class="fa fa-minus plus-icon"></i> </button>
+                            <input type="text" placeholder="12.50" class="input">
+                            <button type="button" class="plus"> <i class="fa fa-plus plus-icon"></i> </button> </div>
+                    </div>
+
+                    <p class="px-4 pt-4 text-white"> START <span id="rate"> OPS </span> </p>
+                    <div class="d-flex justify-content-between mt-3">
+                        <button type="button" class="plus"> <i class="fa fa-minus"></i> </button>
+                        <input type="text" placeholder="12.50" class="input">
+                        <button type="button" class="plus"> <i class="fa fa-plus"></i> </button>
+                        <div>
+                            <button type="button" class="plus"> <i class="fa fa-minus"></i> </button>
+                            <input type="text" placeholder="12.50" class="input">
+                            <button type="button" class="plus"> <i class="fa fa-plus"></i> </button> </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <h5 class="text-warning text-center pt-5"> Filter by Shift Duration</h5>
+                    <!-- <img src="images/slider.png" class="mt-2"> -->
+
+
+                    <!-- partial:index.partial.html -->
+                    <div class="range">
+                        <input type="range">
+                    </div>
+
+                    <ul class="range-labels">
+                        <li class="text-white">2</li>
+                        <li class="text-white">3</li>
+                        <li class="text-white">4</li>
+
+                    </ul>
+                    <!-- partial -->
+
+                    <center> <select name="task" class="mt-5 select ">
+                            <option value="">Filter By Task Type </option>
+                        </select>
+                        <h6 class="text-white text-center pt-3"> Reoragnise Your Pirorities</h6>
+                        <select name="filter" class="select">
+                        <option value="Filter" class="mt-3 select w-75">Filter By Task Type </option>
+                    </select> </center>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12 main mt-20">
+                <div class="row">
+                    <div class="col-md-1 col-sm-1 col-1 review-column-padding">
+                        <div class="rotate ">
+                            <div class="section reviewclick1-tail">
+                                <p> S2S JOBS </p>
+                            </div>
+                            <div class="section reviewclick2-tail">
+                                <p> DEPOST FIRST JOBS </p>
+                            </div>
+                            <div class="section reviewclick3-tail">
+                                <p> FULL TIME JOBS </p>
+                            </div>
+                            <div class="section reviewclick3-tail">
+                                <p> SAVED JOBS </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-11 col-sm-11 col-11">
+                        <div class="reviewclick1">
+                            <div id="div1">
+                                <h3 class="pt-3"> FINANCIAL SPECIFICATION </h3>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="job4" class="custom-radio mt-1"> &nbsp; FINDER FORCE OOPS <br> &nbsp;&nbsp;REQUIRED FOR THIS JOB
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="job" class="custom-radio mt-1"> Job /Pay p/hour
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="jo2" class="custom-radio mt-1"> Job Duration
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 inputt">
+                                        <input type="text" class="w-25" placeholder="1">
+                                    </div>
+                                    <div class="col-md-4 inputt">
+                                        <input type="text" class="w-25" placeholder="$11.50">
+                                    </div>
+                                    <div class="col-md-4 inputt">
+                                        <input type="text" class="w-25" placeholder="10 hrs">
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="job4" class="custom-radio mt-1"> Client Revenue
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="job" class="custom-radio mt-1"> Total Job Pay
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="radio" name="" value="jo2" class="custom-radio mt-1"> Gross Profit
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 inputt">
+                                        <input type="text" class="w-25" placeholder="$420">
+                                    </div>
+                                    <div class="col-md-4 inputt">
+                                        <button type="button" class="btn btn-dark w-50"> $35 </button>
+                                    </div>
+                                    <div class="col-md-4 inputt">
+                                        <button type="button" class="btn btn-dark w-50"> $35 </button>
+                                    </div>
+                                </div>
+                                <h3 class="pt-5"> OP SPECIFICATION </h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="radio" name="" value="job4" class="custom-radio mt-1"> Require Qualification
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="radio" name="" value="job" class="custom-radio mt-1"> Prefered Minimal Rating
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 inputt">
+                                        <input type="text" class="w-75" placeholder="SLG UNIT 2">
+                                    </div>
+                                    <div class="col-md-6 inputt">
+                                        <input type="text" class="w-75" placeholder="Anywhere">
+                                    </div>
+                                </div>
+                                <input type="radio" class="custom-radio mt-5"> Additional Location Information <br>
+                                <input type="checkbox" class="custom-checkbox mt-2"> &nbsp;&nbsp; yes this is checkbox yes this is checkbox yes this is checkbox
+                                <h3 class="pt-5"> ADDITIONAL INFORMATION </h3>
+                                <div class="row">
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+                                    <div class="col-md-2 p-3">
+                                        <img src="images/2.PNG" class="img-fluid">
+                                    </div>
+                                </div>
+                                <input type="radio" name="notify" class="custom-radio mt-5"> NOTIFY <br> &nbsp;&nbsp; yes this is checkbox yes this is checkbox yes this is checkbox
+                                <BR>
+                                <button type="button" class="btn btn-outline-warning mt-2" onclick="replace('div1','div2')" id="editjobpost">Edit Job Post</button>
+                            </div>
+                            <div id="div2" class="mx-5"><br>
+                                <div class="review d-flex">
+                                    <img src="images/questionmark.png" id="questionmark">
+                                    <h3 id="s25jobs"> S25 Jobs </h3>
+                                </div>
+
+                                <div class="d-flex searcher">
+                                    <button type="button" class="btn btn-dark"> <i class="fa fa-search searchicon"></i> </button>
+                                    <input type="text" class="form-control searchbar" placeholder="Find a 2 STRAIGHT 2 SITE JOB">
+                                </div>
+
+                                <div class="wrapper2 ">
+                                    <div class="lists p-2 border-style-white">
+                                        <p> SUBNET - OXFORD <span id="rate"> 05/12/2020 </span> </p>
+                                        <p> 7:00 - 17:00(hrs) &nbsp;&nbsp; OXFORD <span id="rate"> 0x1345 </span> </p>
+                                        <p> 2 Way</p>
+                                        <button type="button " class="bg-warning text-white "> $4545.3 SHIFT </button>
+                                    </div>
+                                    <div class="lists bg-warning text-dark border-style">
+                                        <p> KAT <br> KNIGHT</p>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper2 ">
+                                    <div class="lists p-2 border-style-white">
+                                        <p> SUBNET - OXFORD <span id="rate"> 05/12/2020 </span> </p>
+                                        <p> 7:00 - 17:00(hrs) &nbsp;&nbsp; OXFORD <span id="rate"> 0x1345 </span> </p>
+                                        <p> 2 Way</p>
+                                        <button type="button " class="bg-dark text-white "> $4545.3 SHIFT </button>
+                                    </div>
+                                    <div class="lists bg-dark text-white border-style">
+                                        <p> KAT <br> KNIGHT</p>
+                                    </div>
+                                </div>
+
+                                <div class="wrapper2 ">
+                                    <div class="lists p-2 border-style-white">
+                                        <p> SUBNET - OXFORD <span id="rate"> 05/12/2020 </span> </p>
+                                        <p> 7:00 - 17:00(hrs) &nbsp;&nbsp; OXFORD <span id="rate"> 0x1345 </span> </p>
+                                        <p> 2 Way</p>
+                                        <button type="button " class="bg-dark text-white "> $4545.3 SHIFT </button>
+                                    </div>
+                                    <div class="lists bg-white text-dark border-style">
+                                        <p> KAT <br> KNIGHT</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="wrapper2 ">
+                                    <div class="lists p-2 border-style-white">
+                                        <p> SUBNET - OXFORD <span id="rate"> 05/12/2020 </span> </p>
+                                        <p> 7:00 - 17:00(hrs) &nbsp;&nbsp; OXFORD <span id="rate"> 0x1345 </span> </p>
+                                        <p> 2 Way</p>
+                                        <button type="button " class="bg-dark text-white "> $4545.3 SHIFT </button>
+                                    </div>
+                                    <div class="lists bg-warning text-dark border-style">
+                                        <p> KAT <br> KNIGHT</p>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div id="tab1 " class="reviewclick2 mx-4 px-4">
+                            <!-- 
+                                   <div class="review d-flex">
+                                    <img src="images/questionmark.png" style="width: 35px;height: 35px;">
+                                    <h3 style="margin-left: 20px;"> $25 Jobs </h3> -->
+
+                            <div class="review d-flex mt-3">
+                                <img src="images/questionmark.png" id="questionmark" class="mx-2">
+                                <h3 class="mx-2"> DEPOT FIRST </h3>
+                            </div>
+
+                            <div class="wrapper2 ">
+                                <div class="lists p-2 border-style-white">
+                                    <p> SUBNET - OXFORD <span id="rate"> 05/12/2020 </span> </p>
+                                    <p> 7:00 - 17:00(hrs) &nbsp;&nbsp; OXFORD <span id="rate"> 0x1345 </span> </p>
+                                    <p> 2 Way</p>
+                                    <button type="button " class="bg-warning text-white "> $4545.3 SHIFT </button>
+                                </div>
+                                <div class="lists bg-warning text-dark border-style">
+                                    <p> KAT <br> KNIGHT</p>
+                                </div>
+                            </div>
+
+                            <div class="wrapper2 ">
+                                <div class="lists p-2 border-style-white">
+                                    <p> SUBNET - OXFORD <span id="rate"> 05/12/2020 </span> </p>
+                                    <p> 7:00 - 17:00(hrs) &nbsp;&nbsp; OXFORD <span id="rate"> 0x1345 </span> </p>
+                                    <p> 2 Way</p>
+                                    <button type="button " class="bg-dark text-white "> $4545.3 SHIFT </button>
+                                </div>
+                                <div class="lists bg-dark text-white border-style">
+                                    <p> KAT <br> KNIGHT</p>
+                                </div>
+                            </div>
+
+                            <div class="wrapper2 ">
+                                <div class="lists p-2 border-style-white">
+                                    <p> SUBNET - OXFORD <span id="rate"> 05/12/2020 </span> </p>
+                                    <p> 7:00 - 17:00(hrs) &nbsp;&nbsp; OXFORD <span id="rate"> 0x1345 </span> </p>
+                                    <p> 2 Way</p>
+                                    <button type="button " class="bg-dark text-white "> $4545.3 SHIFT </button>
+                                </div>
+                                <div class="lists bg-white text-dark border-style">
+                                    <p> KAT <br> KNIGHT</p>
+                                </div>
+                            </div>
+
+
+                            <div class="wrapper2 ">
+                                <div class="lists p-2 border-style-white">
+                                    <p> SUBNET - OXFORD <span id="rate"> 05/12/2020 </span> </p>
+                                    <p> 7:00 - 17:00(hrs) &nbsp;&nbsp; OXFORD <span id="rate"> 0x1345 </span> </p>
+                                    <p> 2 Way</p>
+                                    <button type="button " class="bg-dark text-white "> $4545.3 SHIFT </button>
+                                </div>
+                                <div class="lists bg-warning text-dark border-style">
+                                    <p> KAT <br> KNIGHT</p>
+                                </div>
+                            </div>
+
+
+
+
+                            <script type="text/javascript">
+                                $(window).scroll(function() {
+                                    var positiontop = $(document).scrollTop();
+                                    // console.log(positiontop);
+                                });
+                            </script>
+                        </div>
+                        <!---TABS DATA SECTIO ENDS HRERE-----?--?-->
+                        <div id="list" class="reviewclick3">
+                            <h3 id="savejob"> SAVE JOB POSTS </h3>
+                            <div class="row bg-dark mt-3 text-white row3">
+                                <div class="col-md-1">
+                                    <i class="fa fa-search text-white pt-2 text-center" id="searchh"></i>
+                                </div>
+                                <div class="col-md-10 searchbar">
+                                    <input type="text" class="form-control" placeholder="Find a Saved Job Posts" id="findjob">
+                                </div>
+                                <div class="col-md-1"> <img src="images/icon5.png" id="icon5"> </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " id="height3">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white "> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " id="height3">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " id="height3">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white "> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " id="height3">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " id="height3">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " id="height3">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " id="height3">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " id="height3">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " id="height3">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white  text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="wrapper2 ">
+                                        <div class="lists p-2 border-style-white">
+                                            <div class="d-flex " id="height3">
+                                                <p>BT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <p>BLGU 22</p>
+                                            </div>
+                                            06/12/2020
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "> <i class="fa fa-stopwatch "></i> 7:00 - 17:00 (10hrs)</p> &nbsp;&nbsp;
+                                                <p> <i class="fa fa-map-marker-alt "></i> OXFORD</p>
+                                            </div>
+                                            <div class="d-flex " id="height3">
+                                                <p class=" "><i class="fa fa-calendar-times "></i> 2 WAY</p>&nbsp;&nbsp;
+                                                <p class=" "><i class="fa fa-map-marker-alt "></i> BLGU 22</p>
+                                            </div>
+                                            <button type="button " class="bg-dark text-white"> $4545.3 SHIFT </button>
+                                        </div>
+                                        <div class="lists bg-white text-dark border-style">
+                                            <p> KAT <br> KNIGHT</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ///MAIN DIV ENDS HERE -->
+            <div class="col-md-3 col-sm-12 right rightbox pt-3">
+
+                <div class="row bgimg ">
+                    <div class="col-md-11 col-sm-6 col-6" id="mybox">
+                        <p class="text-center text-white" id="mypara"> SUBNET - OXFORD <br> <span> STRAIGHT 2 SITE </span> </p>
+
+
+                        <p id="redbg"> SATURDAY 5TH DECEMBER <br> 07:00 - 17:00</p>
+                        <hr style="color: white;">
+                        <div class="d-flex justify-content-around" id="tasktype">
+                            <div>
+                                TASK TYPE <br> CLIENT <br> WORKIGN WITH <br> FFF AGENTS ON SITE <br> MIN.LEVEL REQUIRED
+                            </div>
+                            <div>
+                                2-Way <br> Subbelt TM-oxford <br> B.T <br> 3 <br> SLG Unit 2
+                            </div>
+                        </div>
+                        <hr style="color: white;">
+                        <p class="text-white text-center" id="hourlyduration">Duration (HRS) 10 <br>Hourly Rate ($) 250 Daily Rate ($) 115</p>
+
+
+                        <div id="mycalendar" class=" calender-center">
+                            <div class="yellow">
+                                <div id="calendar">
+                                    <div id="toolbar"></div>
+                                    <div id="dates" class="show">
+                                        <div id="lastMt">&lsaquo;</div>
+                                        <div id="nextMt">&rsaquo;</div>
+                                        <div id="months-cont">
+                                            <div id="months">
+                                                <span class="active month">January</span><span class="month">February</span><span class="month">March</span><span class="month">April</span><span class="month">May</span><span class="month">June</span>
+                                                <span class="month">July</span><span class="month">August</span><span class="month">September</span><span class="month">October</span><span class="month">November</span><span class="month">December</span>
+                                            </div>
+                                        </div>
+                                        <div id="daysotweek">
+                                            <div class="day">S</div>
+                                            <div class="day">M</div>
+                                            <div class="day">T</div>
+                                            <div class="day">W</div>
+                                            <div class="day">T</div>
+                                            <div class="day">F</div>
+                                            <div class="day">S</div>
+                                        </div>
+                                        <div id="days">
+                                        </div>
+                                    </div>
+                                    <div id="info" class="hide">
+                                        <div id="actual-date"></div>
+                                        <div id="back">
+                                        </div>
+                                        <div id="month-name"></div>
+                                        <div id="weather">
+                                            <div id="sun"></div>
+                                            <div id="mountains"></div>
+                                            <div id="rain">
+                                                <div class="raindrop" id="drop-1"></div>
+                                                <div class="raindrop center" id="drop-2"></div>
+                                                <div class="raindrop center" id="drop-3"></div>
+                                                <div class="raindrop" id="drop-4"></div>
+                                            </div>
+                                            <div id="temp">57&deg;<span>F</span></div>
+                                        </div>
+                                        <div id="bg-card">
+                                            <div class="content"></div>
+                                        </div>
+                                        <div id="card">
+                                            <div class="content">
+                                                <div id="event-name"></div>
+                                                <div id="event-details">
+                                                    <div class="col-3">
+                                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                                        <h3>Location</h3>
+                                                        <p>12345 Generic Ave., Some City, Some State, 12345
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                                        <h3>Time</h3>
+                                                        <p> 12:00 AM </p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                                        <h3>Attendee</h3>
+                                                        <p>Me, You, and 2+</p>
+                                                    </div>
+                                                    <div style="clear: both"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="colors" class="hide">
+                                        <div id="close">&times;</div>
+                                        <p>Choose theme color</p>
+                                        <div class="color" id="salmon"></div>
+                                        <div class="color" id="dkpink"></div>
+                                        <div class="color" id="red"></div>
+                                        <div class="color" id="redorg"></div>
+                                        <div class="color" id="orange"></div>
+                                        <div class="color" id="orgylw"></div>
+                                        <div class="color active" id="yellow"></div>
+                                        <div class="color" id="green"></div>
+                                        <div class="color" id="aqua"></div>
+                                        <div class="color" id="teal"></div>
+                                        <div class="color" id="sltbl"></div>
+                                        <div class="color" id="pwdbl"></div>
+                                        <div class="color" id="blue"></div>
+                                        <div class="color" id="purple"></div>
+                                        <div class="color" id="dkprpl"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="subnet">
+                            <p class="subnet px-2 mx-3 mt-3"> SUBNET - OXFORD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 WAY <br> 7:00-17:00 (10hrs) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; OXFORD</p>
+
+                            <p class="subnet px-2 mx-3"> Remember properwork for the e4t45 </p>
+                            <p class="subnet px-2 mx-3"> Remember properwork for the e4t45 </p>
+                            <p class="subnet px-2 mx-3"> Remember properwork for the e4t45 </p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 ">
+                        <div class="sidemenu ">
+                            <img src="images/FF icon.png " class="toggleicon " alt=" ">
+                            <div class="d-flex flex-column justify-content-center menuicon text-center ">
+                                <a href="# "> <img src="images/icon1.png " id="icon1"> </a>
+                                <a href="# "> <img src="images/icon3.png " id="icon1"> </a>
+                                <a href="# "> <img src="images/icon2.png " id="icon1"> </a>
+                                <a href="# "> <img src="images/icon4.png " id="icon1"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function replace(hide, show) {
+            document.getElementById(hide).style.display = "none";
+            document.getElementById(show).style.display = "block";
+        }
+    </script>
+    <script src="script.js"></script>
+    <script src="range.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js'></script>
+    <script src="script.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js " integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js " integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc " crossorigin="anonymous "></script>
+        -->
+</body>
+
+</html>
