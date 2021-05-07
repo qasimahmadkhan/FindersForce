@@ -136,6 +136,7 @@ background-image: url(../images/bg.png); */
     position: fixed;
     background-image: url(../images/profile-img5.png);
     overflow: hidden;
+    border-left: 1px solid white;
 }
 
 @media only screen and (max-width: 763px) {
@@ -483,4 +484,9 @@ new css ///*/
 #icon1 {
     width: 20px;
     height: 20px;
+}
+
+.sos-font {
+    color: white;
+    font-size: 1rem;
 }
