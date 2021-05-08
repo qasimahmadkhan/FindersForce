@@ -12,6 +12,14 @@
      -webkit-appearance: none;
  }
  
+ @media only screen and (max-width: 700px) {
+     .range input {
+         width: 70%;
+         margin: 0 auto;
+         -webkit-appearance: none;
+     }
+ }
+ 
  .range input::-webkit-slider-thumb {
      -webkit-appearance: none;
      width: 18px;

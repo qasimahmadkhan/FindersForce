@@ -315,6 +315,14 @@ border: 5px solid warning;
     margin-top: 30px;
 }
 
+@media only screen and (max-width: 700px) {
+    .inputbox {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
 input {
     background: none;
     border: none;
@@ -489,4 +497,12 @@ new css ///*/
 .sos-font {
     color: white;
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .dr {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
 }
