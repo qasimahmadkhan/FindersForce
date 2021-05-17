@@ -126,6 +126,17 @@
 
         });
     </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 
     <title> Homepage </title>
 
@@ -274,20 +285,24 @@
 
                     <div class="col-md-11 col-sm-11 col-11">
                         <div class="reviewclick1">
-                            <div id="div1" style="display:none;overflow: hidden;">
-                                <h3 class="pt-3"> FINANCIAL SPECIFICATION </h3>
+                            <div style="float: right; display:block;padding-top: 15px;">
+                                <input type="radio" name="next-page" checked onclick="replace('div1','div2')" id="first-view">
+                                <input type="radio" name="next-page" onclick="replace('div2','div1')" id="second-view">
+                            </div>
+                            <div id="div1" style="display:none;">
+                                <h3 class="pt-3 jsf"> FINANCIAL SPECIFICATION </h3>
                                 <div class="row">
                                     <div class="col-md-4 col-sm-4 col-4">
-                                        <input type="radio" id="" name="" value="">
-                                        <label class="" for="" style="font-size: 0.8rem;"> Finder Force OOPS </label><br>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="ffoo" for=""> Finder Force OOPS </label><br>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
-                                        <input type="radio" id="" name="" value="">
-                                        <label class="" for="" style="font-size: 0.8rem;"> Job pay per hour</label><br>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="ffoo" for=""> Job pay per hour</label><br>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
-                                        <input type="radio" id="" name="" value="">
-                                        <label class="" for="" style="font-size: 0.8rem;"> Job duration</label><br>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="ffoo" for=""> Job duration</label><br>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -305,16 +320,16 @@
 
                                 <div class="row mt-4">
                                     <div class="col-md-4 col-sm-4 col-4">
-                                        <input type="radio" id="" name="" value="">
-                                        <label class="" for="" style="font-size: 0.8rem;"> Finder Force OOPS </label><br>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="ffoo" for=""> Finder Force OOPS </label><br>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
-                                        <input type="radio" id="" name="" value="">
-                                        <label class="" for="" style="font-size: 0.8rem;"> Job pay per hour</label><br>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="ffoo" for=""> Job pay per hour</label><br>
                                     </div>
                                     <div class="col-md-4 col-sm-4 col-4">
-                                        <input type="radio" id="" name="" value="">
-                                        <label class="" for="" style="font-size: 0.8rem;"> Job duration</label><br>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="ffoo" for=""> Job duration</label><br>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -330,13 +345,15 @@
                                 </div>
 
 
-                                <h3 class="pt-5"> OP SPECIFICATION </h3>
+                                <h3 class="pt-5 jsf"> OP SPECIFICATION </h3>
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6 col-6">
-                                        <input type="radio" name="" value="job4" style="font-size: 0.8rem;" class="custom-radio mt-1"> Require Qualification
+                                        <img src="images/Question mark copy 3@2x.png" class="custom-radio mt-1" alt="">
+                                        <label class="ffoo" for=""> Require Qualification</label><br>
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-6">
-                                        <input type="radio" name="" value="job" style="font-size: 0.8rem;" class="custom-radio mt-1"> Prefered Minimal Rating
+                                        <img src="images/Question mark copy 3@2x.png" class="custom-radio mt-1" alt="">
+                                        <label class="ffoo" for=""> Preferrred minimal ratting</label><br>
                                     </div>
 
                                 </div>
@@ -350,12 +367,15 @@
                                 </div>
 
 
-                                <input type="radio" class="custom-radio mt-5"> Additional Location Information <br>
+                                <div class="">
+                                    <img src="images/Question mark copy 3@2x.png" alt="">
+                                    <label class="ffoo" for="" s> Additional location information</label><br>
+                                </div>
 
 
                                 <input type="checkbox" class="custom-checkbox mt-2"> &nbsp;&nbsp; yes this is checkbox
 
-                                <h3 class="pt-5"> ADDITIONAL INFORMATION </h3>
+                                <h3 class="pt-5 jsf"> ADDITIONAL INFORMATION </h3>
                                 <div class="row">
                                     <div class="col-md-2 col-sm-2 col-2 p-3">
                                         <img src="images/2.PNG" class="img-fluid">
@@ -381,33 +401,34 @@
                                         <img src="images/2.PNG" class="img-fluid">
                                     </div>
                                 </div>
-                                <input type="radio" name="notify" class="custom-radio mt-5"> NOTIFY <br> &nbsp;&nbsp; yes this is checkbox yes this is checkbox yes this is checkbox
-                                <BR>
-                                <button type="button" class="btn btn-outline-warning mt-2" onclick="replace('div1','div2')" style="float: right; border-radius: 40px;">Edit Job Post</button>
+                                <div class="">
+                                    <img src="images/Question mark copy 3@2x.png" alt="">
+                                    <label class="ffoo" for=""> Job duration</label><br>
+                                </div>
                             </div>
 
 
 
 
-                            <div id="div2" style="display:block;overflow: hidden;"><br>
+                            <div id="div2" style="display:block;"><br>
                                 <div class="review d-flex">
                                     <img src="images/questionmark.png" style="width: 35px;height: 35px;">
                                     <h3 style="margin-left: 20px;"> Review </h3>
                                 </div>
 
 
-                                <h3> JOB SPECIFICATION</h3>
+                                <h3 class="jsf"> JOB SPECIFICATION</h3>
 
                                 <div class="row justify-content-between mt-sm-3 mt-3">
                                     <div class="col-md-5 col-sm-5 col-5 ">
-                                        <input type="radio" id="" name="" value="job">
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
                                         <label class="job-spec-fontsieze" for="job">Job Type</label><br>
                                     </div>
                                     <div class="col-md-3 col-sm-3 col-3">
-                                        <input type="radio" id="" name="" value="sdate">
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
                                         <label class="job-spec-fontsieze" for="sdate">Start Date</label><br> </div>
                                     <div class="col-md-3 col-sm-3 col-3">
-                                        <input type="radio" id="" name="" value="fd">
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
                                         <label class="job-spec-fontsieze" for="fd">Finish Date</label><br> </div>
                                 </div>
 
@@ -417,10 +438,10 @@
                                         <input type="text " class="w-100 " placeholder="Straight 2 Site ">
                                     </div>
                                     <div class="col-md-3 col-sm-3 col-3  inputt ">
-                                        <input type="text " class="w-100 " placeholder="Straight 2 Site ">
+                                        <input type="text " class="w-100 " placeholder="5/12/2020 ">
                                     </div>
                                     <div class="col-md-3 col-sm-3 col-3 inputt ">
-                                        <input type="text " class="w-100 " placeholder="Straight 2 Site ">
+                                        <input type="text " class="w-100 " placeholder="5/12/2020">
                                     </div>
                                 </div>
 
@@ -429,27 +450,27 @@
 
                                 <div class="row justify-content-between mt-sm-3 mt-3">
                                     <div class="col-md-5 col-sm-5 col-5 ">
-                                        <input type="radio" id="" name="" value="job">
-                                        <label class="job-spec-fontsieze" for="job">Job Type</label><br>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="job-spec-fontsieze" for="job">Client Name</label><br>
                                     </div>
                                     <div class="col-md-3 col-sm-3 col-3">
-                                        <input type="radio" id="" name="" value="sdate">
-                                        <label class="job-spec-fontsieze" for="sdate">Start Date</label><br> </div>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="job-spec-fontsieze" for="sdate">Start Time</label><br> </div>
                                     <div class="col-md-3 col-sm-3 col-3">
-                                        <input type="radio" id="" name="" value="fd">
-                                        <label class="job-spec-fontsieze" for="fd">Finish Date</label><br> </div>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="job-spec-fontsieze" for="fd">Finish Time</label><br> </div>
                                 </div>
 
 
                                 <div class="row justify-content-between ">
                                     <div class="col-md-5 col-sm-5 col-5  inputt ">
-                                        <input type="text " class="w-100 " placeholder="Straight 2 Site ">
+                                        <input type="text " class="w-100 " placeholder="BT">
                                     </div>
                                     <div class="col-md-3 col-sm-3 col-3  inputt ">
-                                        <input type="text " class="w-100 " placeholder="Straight 2 Site ">
+                                        <input type="text " class="w-100 " placeholder="7:00">
                                     </div>
                                     <div class="col-md-3 col-sm-3 col-3 inputt ">
-                                        <input type="text " class="w-100 " placeholder="Straight 2 Site ">
+                                        <input type="text " class="w-100 " placeholder="17:00">
                                     </div>
                                 </div>
 
@@ -458,11 +479,11 @@
 
                                 <div class="row mt-lg-4 justify-content-between mt-sm-3 mt-3">
                                     <div class="col-md-5 col-sm-5 col-5 ">
-                                        <input type="radio" id="" name="" value="cname">
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
                                         <label class="job-spec-fontsieze" for="cname">Task Type</label><br>
                                     </div>
                                     <div class="col-md-3  col-sm-3 col-3">
-                                        <input type="radio" id="" name="" value="stime">
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
                                         <label class="job-spec-fontsieze3" for="stime">Job Duration</label><br>
                                     </div>
                                     <div class="col-md-3 col-sm-3 col-3">
@@ -484,17 +505,17 @@
 
                                 <!-- SECTION TWO ADDRESS-////// -->
 
-                                <h3 class="pt-5 "> ADDRESS </h3>
+                                <h3 class="pt-5 jsf"> ADDRESS </h3>
 
                                 <div class="row justify-content-between ">
                                     <div class="col-md-5 col-sm-5 col-5">
-                                        <input type="radio" id="" name="" value="job">
-                                        <label class="job-spec-fontsieze" for="job">Job Type</label><br>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="job-spec-fontsieze" for="job">Number/Name</label><br>
                                     </div>
 
                                     <div class="col-md-7 col-sm-7 col-7">
-                                        <input class="adress-margin" type="radio" id="" name="" value="sdate">
-                                        <label class="job-spec-fontsieze" for="sdate">Start Date</label><br>
+                                        <img src="images/Question mark copy 3@2x.png" class="adress-margin" alt="">
+                                        <label class="job-spec-fontsieze" for="sdate">Street</label><br>
                                     </div>
 
 
@@ -504,11 +525,11 @@
 
                                 <div class="row justify-content-between ">
                                     <div class="col-md-5 col-sm-5  col-5 input">
-                                        <input type="text " style="width: 100%;" placeholder="B4UG ">
+                                        <input type="text " style="width: 100%;" placeholder="Unit P1 ">
                                     </div>
 
                                     <div class="col-md-7 col-sm-7 col-7 inputt " style="text-align: right;">
-                                        <input type="text " class=" " placeholder="553 " style="width: 92%;">
+                                        <input type="text " class=" " placeholder="OX13 5AS " style="width: 92%;">
                                     </div>
 
 
@@ -519,13 +540,14 @@
 
                                 <div class="row justify-content-between mt-4">
                                     <div class="col-md-5 col-sm-5 col-5">
-                                        <input type="radio" id="" name="" value="job">
-                                        <label class="job-spec-fontsieze" for="job">Job Type</label><br>
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
+                                        <label class="job-spec-fontsieze" for="job">Post Code</label><br>
                                     </div>
 
                                     <div class="col-md-7 col-sm-7 col-7 ">
-                                        <input class="adress-margin" type="radio" id="" name="" value="sdate">
-                                        <label class="job-spec-fontsieze" for="sdate">Start Date</label><br>
+
+                                        <img src="images/Question mark copy 3@2x.png" class="adress-margin" alt="">
+                                        <label class="job-spec-fontsieze" for="sdate">City/Town/Village</label><br>
                                     </div>
 
 
@@ -533,11 +555,11 @@
 
                                 <div class="row justify-content-between ">
                                     <div class="col-md-5 col-sm-5 col-5 inputt">
-                                        <input type="text " style="width: 100%;" placeholder="B4UG ">
+                                        <input type="text " style="width: 100%;" placeholder="Kingston Business Park ">
                                     </div>
 
                                     <div class="col-md-7 col-sm-7 col-7 inputt " style="text-align: right;">
-                                        <input type="text " class=" " placeholder="553 " style="width: 92%;">
+                                        <input type="text " class=" " placeholder="kingston Bagpuize " style="width: 92%;">
                                     </div>
 
 
@@ -545,8 +567,8 @@
 
 
                                 <div class="col-md-7 col-sm-7 col-7 mt-3">
-                                    <input type="radio" id="" name="" value="sdate">
-                                    <label class="job-spec-fontsieze" for="sdate">Start Date</label><br>
+                                    <img src="images/Question mark copy 3@2x.png" alt="">
+                                    <label class="job-spec-fontsieze" for="sdate">Addtional location information</label><br>
                                 </div>
 
                                 <div class="text mt-3 p-2 w-100 ">
@@ -554,29 +576,29 @@
                                 </div>
 
 
-                                <h3 class="pt-5 "> FINER DETAILS </h3>
+                                <h3 class="pt-5 jsf"> FINER DETAILS </h3>
 
                                 <div class="row ">
 
                                     <div class="col-md-5 col-sm-5 col-5 finer-detail-width">
-                                        <input type="radio" id="" name="" value="sdate">
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
                                         <label class="job-spec-fontsieze2" for="sdate">Where Should we send this job?</label><br>
                                     </div>
 
                                     <div class="col-md-6 finer-detail-width2">
-                                        <input type="radio" id="" name="" value="sdate">
+                                        <img src="images/Question mark copy 3@2x.png" alt="">
                                         <label class="job-spec-fontsieze2" for="sdate">Save Job post for future booking</label><br>
                                     </div>
 
 
                                     <div class="col-md-5 mt-2  finer-detail-width">
                                         <input type="checkbox" id="" name="" value="sdate">
-                                        <label class="job-spec-fontsieze1" for="sdate">Where Should we send this job?</label><br>
+                                        <label class="job-spec-fontsieze1" for="sdate">Send to all</label><br>
                                     </div>
 
                                     <div class="col-md-6 mt-2 finer-detail-width2">
                                         <input type="checkbox" id="" name="" value="sdate">
-                                        <label class="job-spec-fontsieze1" for="sdate">Where Should we send this job?</label><br>
+                                        <label class="job-spec-fontsieze1" for="sdate">Let's save time</label><br>
                                     </div>
 
                                     <div class="col-md-6 col-sm-6 col-6 input  mt-2 finer-detail-width">
@@ -584,7 +606,7 @@
                                     </div>
 
                                     <div class="col-md-6 col-sm-6 col-6 mt-2 ">
-                                        <button type="button " class="btn btn-outline-warning rounded-pill " onclick="replace('div2','div1')"> Edit Job Post <i class="fa fa-angle-right "></i> </button>
+                                        <button type="button " class="btn btn-outline-warning rounded-pill "> Edit Job Post <i class="fa fa-angle-right "></i> </button>
                                     </div>
 
                                 </div>
@@ -1097,13 +1119,14 @@
                     <div class="col-md-1 ">
 
                         <div class="sidemenu ">
-                            <img src="images/FF icon.png " class="toggleicon " alt=" ">
+                            <img src="images/FF icon.png " class="toggleicon openbtn " onclick="openNav()" alt=" ">
 
-                            <div class="d-flex flex-column justify-content-center menuicon text-center ">
-                                <a href="# "> <img src="images/icon1.png " style="width: 20px;height: 20px;"> </a>
-                                <a href="# "> <img src="images/icon3.png " style="width: 20px;height: 20px;"> </a>
-                                <a href="# "> <img src="images/icon2.png " style="width: 20px;height: 20px;"> </a>
-                                <a href="# "> <img src="images/icon4.png " style="width: 20px;height: 20px;"> </a>
+                            <div id="mySidebar" class="sidebar">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                                <a href="# "> <img src="images/icon1.png " style="width: 20px;height: 20px;"> HQ </a>
+                                <a href="# "> <img src="images/icon3.png " style="width: 20px;height: 20px;"> JOBS </a>
+                                <a href="# "> <img src="images/icon2.png " style="width: 20px;height: 20px;"> Depots</a>
+                                <a href="# "> <img src="images/icon4.png " style="width: 20px;height: 20px;"> Planner</a>
                             </div>
                         </div>
                     </div>
