@@ -66,6 +66,17 @@
 
         });
     </script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
     <title> Homepage </title>
 </head>
 
@@ -1167,7 +1178,13 @@
                     </div>
                     <div class="col-md-1 bg-d">
                         <div class="sidemenu ">
-                            <img src="images/FF icon@2x.png" class="toggleicon " alt=" ">
+                            <img src="images/FF icon@2x.png" class="toggleicon  " onclick="openNav()" alt=" ">
+                            <div id="mySidebar" class="sidebar">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                                <a href="# "> <img src="images/Group 2.1@2x.png" style="width: 20px;height: 20px;"> STATS </a>
+
+
+                            </div>
 
                         </div>
                     </div>
