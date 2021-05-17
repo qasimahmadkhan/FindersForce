@@ -85,8 +85,6 @@ input {
 .sidemenu {
     height: 100%;
     padding: 0px;
-    position: absolute;
-    right: 0;
     top: 0;
     text-align: center;
 }
@@ -154,7 +152,6 @@ input {
     cursor: pointer;
     width: 40px;
     height: 40px;
-    margin-top: 10px;
 }
 
 .menutext {
@@ -467,6 +464,7 @@ input[type='radio']:checked:after {
     background-color: #111;
     color: white;
     border: none;
+    margin-top: -70px;
 }
 
 .openbtn:hover {
