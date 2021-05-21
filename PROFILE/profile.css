@@ -605,7 +605,8 @@ input {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    /* background-color: rgb(0, 0, 0); */
+    background-image: url("images/profile-img5.png");
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;

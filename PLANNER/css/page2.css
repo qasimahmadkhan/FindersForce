@@ -89,6 +89,10 @@ input {
     text-align: center;
 }
 
+.smpl {
+    border-left: 0.5px solid white;
+}
+
 .text {
     border: 2px solid white;
     border-radius: 10px;
@@ -464,7 +468,7 @@ input[type='radio']:checked:after {
     background-color: #111;
     color: white;
     border: none;
-    margin-top: -70px;
+    /* margin-top: -70px; */
 }
 
 .openbtn:hover {
@@ -474,4 +478,29 @@ input[type='radio']:checked:after {
 #main {
     transition: margin-left .5s;
     padding: 16px;
+}
+
+.jbpl {
+    border-left: 3px solid orange;
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.jbimg {
+    float: right;
+    height: 20px;
+    width: 20px;
+}
+
+.nvli {
+    width: 20px;
+    height: 20px;
+    margin-top: 30px;
+}
+
+.ttd {
+    padding-left: 20px;
+    font-size: 0.9rem;
 }
